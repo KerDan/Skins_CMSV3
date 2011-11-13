@@ -303,7 +303,6 @@
               </tr>
             </table>
           </xsl:for-each>
-          <br />
         </td>
       </tr>
       <tr>
@@ -312,56 +311,6 @@
     </table>
     </xsl:if>
   </xsl:template>
-
-<!-- pour navigation dans rubrique formation2010 uniquement -->
-  <xsl:template name="new-menu">
-  <xsl:variable name="rubrique" select="/cms/inputData/sitemap/page[@sitemap:in-path='true']" />
-    <div id="menu">
-      <h2><xsl:value-of select="/cms/inputData/sitemap/page[@sitemap:in-path='true']/@sitemap:title"/></h2>
-      <ul>
-      <xsl:for-each select="$rubrique/page"> <!-- pages du premier niveau de la rubrique courante -->
-        <li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></li>
-        <xsl:if test="@sitemap:in-path='true'">
-          <ul>
-          <xsl:for-each select="./page"> <!-- sous pages -->
-            <li>
-              <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links">
-              <xsl:if test="@sitemap:in-path='true'">
-                <xsl:attribute name="class">page_navigation_links flag</xsl:attribute>
-              </xsl:if>
-                <xsl:value-of select="@sitemap:title"/>
-              </a>
-            </li>
-          </xsl:for-each>
-          </ul>
-        </xsl:if>
-      </xsl:for-each>
-      </ul>
-    </div>
-  </xsl:template>
-
-  <!-- pour remplacement de navigation-menu -->
-  <xsl:template name="navigation-menu2">
-    <div id="menu">
-      <ul>
-      <xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']">
-        <xsl:for-each select="./preceding-sibling::*"> <!-- noeuds pr�c�dents -->
-          <li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html"><xsl:value-of select="@sitemap:title"/></a></li>
-        </xsl:for-each>
-        <li><xsl:value-of select="@sitemap:title"/></li> <!-- noeud courant -->
-        <ul>
-          <xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page"><!-- noeuds fils -->
-            <li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html"><xsl:value-of select="@sitemap:title"/></a></li>
-          </xsl:for-each>
-        </ul>
-        <xsl:for-each select="./following-sibling::*"> <!-- noeuds suivants -->
-          <li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html"><xsl:value-of select="@sitemap:title"/></a></li>
-        </xsl:for-each>
-      </xsl:for-each>
-      </ul>
-    </div>
-  </xsl:template>
-
 
 <!-- navigation incluant les noeuds freres -->
   <xsl:template name="navigation-menu">

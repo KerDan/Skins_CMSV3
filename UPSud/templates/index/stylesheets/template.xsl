@@ -184,7 +184,7 @@
     							<xsl:call-template name="toolbar_es"/>
     							<xsl:call-template name="menu_es"/>
     							<xsl:call-template name="composantes"/>
-                                 <div id="annexe_cd" style="margin-top: 20px;margin-left: 10px;">
+                                 <div id="annexe_cd" style="margin-top: 20px">
 									<zone name="annexe_cd" level="0"/>
                                 </div>                                
    						</td>
@@ -203,7 +203,7 @@
     							<xsl:call-template name="toolbar_en"/>
     							<xsl:call-template name="menu_en"/>
     							<xsl:call-template name="composantes"/>
-                                 <div id="annexe_cd" style="margin-top: 20px;margin-left: 10px;">
+                                 <div id="annexe_cd" style="margin-top: 20px;">
 									<zone name="annexe_cd" level="0"/>
                                 </div>                                
     						</td>
@@ -215,7 +215,7 @@
 					<tr>
           				<td width="200" valign="top">
 							<xsl:call-template name="menu_fr"/>
-							<div id="annexe_cg" style="margin-top: 20px;margin-left: 10px;">
+							<div id="annexe_cg" style="margin-top: 20px;">
 								<zone name="annexe_cg" level="0"/>
                             </div>                                
    						</td>
@@ -230,7 +230,7 @@
 							<xsl:call-template name="profils"/>
 							<xsl:call-template name="direct"/>
 							<xsl:call-template name="composantes"/>
-                                 <div id="annexe_cd" style="margin-top: 20px;margin-left: 10px;">
+                                 <div id="annexe_cd" style="margin-top: 20px;">
 									<zone name="annexe_cd" level="0"/>
                                 </div>                                
 						</td>
