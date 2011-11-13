@@ -13,6 +13,13 @@
 .text .content h1.title {
 	display: none;
 }
+/*idem pour titre zone annexe en page d'accueil */
+#annexe h1.title {
+	display: none;
+}
+
+img.floatleft {float:left; margin: 0px 10px 10px 0px; }
+img.floatright {float:right; margin: 0px 0px 10px 10px; }
 
 .text {
 	padding-left: 0px;
@@ -32,7 +39,7 @@
 
 .content-illustration {
 	float: left;
-	margin-right: 10px;	
+	/* margin-right: 10px;	*/
 }
 
  #focus div#ametys-cms-zone-focus div {
@@ -42,7 +49,7 @@
 
 /* Plan du site */
 .sitemap {
-	margin-left: 20px;
+	/* margin-left: 20px; */
 }
 
 .sitemap ul li {

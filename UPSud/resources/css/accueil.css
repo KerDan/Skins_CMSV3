@@ -1,75 +1,10 @@
-html {
-	font-size: 100%; /* pour IE windows , cf http://css.alsacreations.com/Tutoriels-et-articles-divers/gerer-la-taille-du-texte-avec-les-em */
-	height: 100%;
-}
+/* feuille de style de la page d'accueil */
 
-body  {
-	height: 100%;
-	/*font-size: 0.75em; /* -> env 12px, taille de r�f�rence en mode standard */
-	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-	color: #333;
-	background: #7CAED1 url("../img/page_bkg.gif") repeat-x;  /* valeur du bleu en bas du fichier page_bkg.gif */
-	margin: 0; padding: 0;
-}
-
-p {
-	font-size: 1em; /* -> 12px */
-	line-height: 1.5em; /* -> 18px */
-	margin-top: 0;
-	margin-bottom: 1.5em;
-}
-
-a {
-	color: #005d9d;
-	text-decoration: none;
-}
-a:active {
-	color: red;
-}
-
-/* champ de recherche */
-.text_field  {
-	font-family: Arial, sans-serif;
-	font-size: 10px;
-	color: #000;
-	border-color: #000 #000 #000 #000;
-	border-style: solid;
-	border-width:1px;
-}
-
-/* barre de navigation - rubriques  */
-.top_navigation  { 
-	font-size: 10px;
-	color: #C3D3E0;
-	font-weight: normal;
-	text-align: center;
-}
-a.top_navigation  {
-	color: #000;
-	text-decoration: none;
-}
-a.top_navigation:hover {
-	color: #255192;
-	text-decoration: none;
-}
-
-/* style de la rubrique courante dans la barre de navigation */
-.top_navigation_on  { 
-	font-size: 10px;
-	color: #007DBD;
-	FONT-WEIGHT: normal;
-	text-align: center;
-}
-a.top_navigation_on  {
-	color: #007DBD;
-	text-decoration: none;
-}
-
-/* propir�t�s communes des menus */
+/* propriétés communes des menus */
 .content h2 {
-	font-family: Arial, sans-serif;
+	font-family: "Trebuchet MS";
 	color: #fff;
-	font-size: 0.88em; /* a remplacer par 1.17 en mode standard */
+	font-size: 0.9em;
 	font-weight: bold;
 	background: #00A0C6;
 	margin: 0;
@@ -92,11 +27,16 @@ padding: 10px 20px 10px 10px
 .content #menu h2   {
 	margin-top:1em ;
 	padding: 0 0 0 9px;
+	background-color: #005992;
+	font-family: "Trebuchet MS";
 }
-.content #menu h2.R1 { background-image: url("../img/home_R1.gif"); background-repeat: no-repeat; background-position: right top }
-.content #menu h2.R2 { text-align: right; background-image: url("../img/home_R2.gif"); background-repeat: no-repeat; background-position: left top ; padding-right: 10px }
-.content #menu h2.R3 { background-image: url("../img/home_R3.gif"); background-repeat: no-repeat; background-position: right top }
+
+.content #menu h2.R1 {} /* Styles différents possible pour les titres de rubriques... */
+.content #menu h2.R2 { text-align: right; background-image: url("../img/home_R2.png"); background-repeat: no-repeat; background-position: left top ; padding-right: 10px }
+.content #menu h2.R3 { background-image: url("../img/home_R3.png"); background-repeat: no-repeat; background-position: right top }
+
 .content #menu h2 a { color:#FFFFFF;}
+
 .content #menu ul li a   {
 	background: #f7f7fe url("../img/bullet_blue.png") no-repeat left center;
 	text-align: left;
@@ -109,27 +49,27 @@ padding: 10px 20px 10px 10px
 
 /* Barre d'outils de la page d'accuel */
 .content #toolbar ul  { padding: 0 30px }
-.content #toolbar ul li#plan a    { color: #666; font-size: 0.7em; line-height: 1.5em; background-image: url("../img/bullet_acces.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 20px; border-bottom: 1px solid #09c }
-.content #toolbar ul li#contacts a    { color: #666; font-size: 0.7em; line-height: 1.5em; background-image: url("../img/bullet_contact.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 20px; border-bottom: 1px solid #09c }
-.content #toolbar ul li#annuaire a    { color: #666; font-size: 0.7em; line-height: 1.5em; background-image: url("../img/bullet_annuaire.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 20px; border-bottom: 1px solid #09c }
-.content #toolbar ul li#sitemap a    { color: #666; font-size: 0.7em; line-height: 1.5em; background-image: url("../img/bullet_sitemap.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 20px; border-bottom: 1px solid #09c }
-.content #toolbar ul li#intranet a    { color: #666; font-size: 0.7em; line-height: 1.5em; background-image: url("../img/bullet_intranet.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 20px; border-bottom: 1px solid #09c }
+.content #toolbar ul li#plan a    { color: #666; font-size: 0.8em; line-height: 2em; background-image: url("../img/map.png"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 30px; border-bottom: 1px solid #09c }
+.content #toolbar ul li#contacts a    { color: #666; font-size: 0.8em; line-height: 2em; background-image: url("../img/email.png"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 30px; border-bottom: 1px solid #09c }
+.content #toolbar ul li#annuaire a    { color: #666; font-size: 0.8em; line-height: 2em; background-image: url("../img/telephone.png"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 30px; border-bottom: 1px solid #09c }
+.content #toolbar ul li#sitemap a    { color: #666; font-size: 0.8em; line-height: 2em; background-image: url("../img/chart_organisation.png"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 30px; border-bottom: 1px solid #09c }
+.content #toolbar ul li#intranet a    { color: #666; font-size: 0.8em; line-height: 2em; background-image: url("../img/key.png"); background-repeat: no-repeat; background-attachment: scroll; background-position: left center; display: block; padding-left: 30px; border-bottom: 1px solid #09c }
 
 /* Menu profils */
 .content #profils  { margin: 0; padding: 30px 20px 10px 10px }
-.content #profils h2 { background-image: url("../img/home_profils.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left top; text-align: right; margin: 0; padding-right: 10px }
+.content #profils h2 { background-color: #92B938; text-align: right; margin: 0; padding-right: 10px ; background-image: url("../img/home_profils.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left top; display: block; padding-left: 20px;}
 .content #profils ul li a    { background: #f7f7fe url("../img/bullet_green.png") no-repeat right center; text-align: right; display: block; padding-right: 20px }
 .content #profils ul li a:hover, #direct ul li a:focus, #profils ul li a:active   { background: #fefefe url("../img/bullet_orange.png") no-repeat right center }
 
 /* Menu acces directs */
 .content #direct  { margin: 0; padding: 10px 20px 10px 10px }
-.content #direct h2 { background-image: url("../img/home_direct.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left top; text-align: right; margin: 0; padding-right: 10px }
+.content #direct h2 { background-color: #92B938; text-align: right; margin: 0; padding-right: 10px; background-image: url("../img/home_direct.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left top; display: block; padding-left: 20px;}
 .content #direct ul li a    { background: #f7f7fe url("../img/bullet_purple.png") no-repeat right center; text-align: right; display: block; padding-right: 20px;}
 .content #direct ul li a:hover, #direct ul li a:focus, #direct ul li a:active   { background: #fefefe url("../img/bullet_orange.png") no-repeat right center }
 
 /* Menu composantes*/
 .content #composantes  { margin: 0; padding: 10px 20px 10px 10px }
-.content #composantes h2 { background-image: url("../img/home_composantes.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left top; text-align: right; margin: 0; padding-right: 10px }
+.content #composantes h2 { background-color: #92B938; text-align: right; margin: 0; padding-right: 10px; background-image: url("../img/home_composantes.gif"); background-repeat: no-repeat; background-attachment: scroll; background-position: left top; display: block; padding-left: 20px; }
 .content #composantes ul li a    { background: #f7f7fe url("../img/bullet_marron.png") no-repeat right center; text-align: right; display: block; padding-right: 20px }
 .content #composantes ul li a:hover, #direct ul li a:focus, #composantes ul li a:active   { background: #fefefe url("../img/bullet_orange.png") no-repeat right center; text-align: right }
 /* version align�e � gauche */
@@ -137,15 +77,15 @@ padding: 10px 20px 10px 10px
 .content #composantes ul.left  li a    { background: #f7f7fe url("../img/bullet_marron.png") no-repeat left center; text-align: left; display: block; padding-left: 20px }
 .content #composantes ul.left  li a:hover, #composantes ul.left li a:active   { background: #fefefe url("../img/bullet_orange.png") no-repeat left center; text-align: left }
 
-/* Actualit�s */
+/* Actualités */
 .content #actus {
 	-height: 1%; /* pour corriger le bug d'affichage avec IE6 (haslayout) */
 	background-color: #ffffff; /* #ffffe8 */
 	margin: 20px 10px 10px;
 	padding: 0
 }
-.content #actus h2  { background-image: url("../img/home_actu.gif"); background-repeat: no-repeat; background-position: left top; padding-left: 10px }
-.content #actus h3 { color: #ba0000; font-size: 0.75em; font-weight: bold; margin: 1em 0 0; padding: 0 0 0 10px; clear: both; border-top: 0 none; border-right: 0 none; border-bottom: 1px solid #ba0000; border-left: 3px solid #ba0000 }
+.content #actus h2  { background-image: url("../img/home_actu.png"); background-repeat: no-repeat; background-position: left top; padding-left: 10px }
+.content #actus h3 { font-family: "Trebuchet MS"; color: #005992; font-size: 0.8em; font-weight: bold; margin: 1em 0 0; padding: 0 0 0 10px; clear: both; border-top: 0 none; border-right: 0 none; border-bottom: 1px solid #8ab713; border-left: 3px solid #8ab713 }
 .content #actus img  { margin: 0 10px 10px 0; float: left }
 .content #actus p    { font-size: 0.7em; margin: 0}
 .content #actus p.vignette    { margin: 0 0 0 100px }
