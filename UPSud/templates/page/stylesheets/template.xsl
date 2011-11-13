@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
-<!-- template des pages du skin UPSud3 -->
-<!--  mise en page en tableaux -->
-<!-- Daniel Kerboeuf, Juin 2009 -->
-<!-- fichier original enregistrï¿½ sous template_06_09.xsl -->
-<!-- cette version est modifiï¿½e pour test de navigation ï¿½ 2 niveaux seulement pour la rubrique formation2010 -->
-<!-- et affichage sans zone de menu ï¿½ gauche quand il n'y a pas de sous page -->
-<!-- cf skin v2.5 -->
-
+<!-- template des pages du skin UPSud v3 -->
+<!-- Daniel Kerboeuf, septembre 2011 -->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
@@ -25,7 +19,7 @@
     <xsl:variable name="style" select="translate(substring(name(/cms/inputData/sitemap//page[@sitemap:current='true']/ancestor-or-self::page[@*[starts-with(name(), $stylePrefix)]][1]/@*[starts-with(name(), $stylePrefix)]), string-length($stylePrefix)+1), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz')"/>
     <xsl:variable name="stylecontext" select="concat($templatecontext, '/', $style)"/>
 
-<!-- template gï¿½nï¿½ral -->
+<!-- template général -->
   <xsl:template name="template">
     <html>
       <head>
@@ -35,16 +29,11 @@
         <meta name="keywords">
           <xsl:attribute name="content"><xsl:for-each select="/cms/page/pageContents/area/html/head/meta[@name='keywords']"><xsl:if test="position() != 1">,</xsl:if><xsl:value-of select="@content"/></xsl:for-each></xsl:attribute>
         </meta>
-                <link rel="stylesheet" href="{$skincontext}/css/content.css" type="text/css"/>
-                <xsl:choose>
-                    <xsl:when test="$style != ''">
-                        <link rel="stylesheet" href="{$stylecontext}/css/u-psud.css" type="text/css"/>
-                        <link rel="stylesheet" href="{$stylecontext}/css/content.css" type="text/css"/>                         
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <link rel="stylesheet" href="{$templatecontext}/default/css/u-psud.css" type="text/css"/>                    
-                    </xsl:otherwise>
-                </xsl:choose>
+                <link rel="stylesheet" href="{$skincontext}/css/u-psud.css" type="text/css"/>
+                <link rel="stylesheet" href="{$skincontext}/css/content.css" type="text/css"/>                    
+                    <xsl:if test="$style != ''">
+                         <link rel="stylesheet" href="{$stylecontext}/css/style.css" type="text/css"/>                         
+                    </xsl:if>
                 <link href="{$skincontext}/css/custom-services-contents.css" rel="stylesheet" type="text/css"/>
       </head>
       
@@ -75,41 +64,41 @@
   <xsl:template name="header">
     <table border="0" cellspacing="0" cellpadding="0" width="100%">
       <tr>
-        <td rowspan="3" height="108" width="210">
-          <a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_ups.gif" width="200" height="64" alt="logo" border="0"/></a>
+        <td rowspan="3" height="120" width="136">
+			<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_psud.png" width="136" height="120" alt="logo" border="0"/></a>
         </td>
         <td valign="top" align="right">
           <table height="37" border="0" cellpadding="0" cellspacing="0">
             <tr>
               <td width="93">
-                                <!-- Lien plan d'accï¿½s -->
-                                <xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]">
-                                    <a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]/@sitemap:path}.html">
-                                        <img src="{$skincontext}/img/{$lang}/top_acces.gif" width="93" height="37" alt="Plans d'accï¿½s aux campus" border="0"/>
-                                    </a>
-                                </xsl:if>            
-                            </td>
-                            <td width="76">
-                                <!-- Lien Contact -->
-                                <xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]">
-                                    <a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:path}.html">
-                                        <img src="{$skincontext}/img/{$lang}/top_contact.gif" width="76" height="37" alt="Vos contacts ï¿½ l'Universitï¿½" border="0" />
-                                    </a>
-                                </xsl:if>                           
-                            </td>
-              <td width="75">
-                                <a href="http://www.annuaire.u-psud.fr/"><img src="{$skincontext}/img/{$lang}/top_annuaire.gif" width="75" height="37" alt="Annuaire de l'Universitï¿½" border="0" /></a>
-                            </td>
+				<!-- Lien plan d'accès -->
+				<xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]">
+					<a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]/@sitemap:path}.html">
+						<img src="{$skincontext}/img/{$lang}/top_acces.gif" width="93" height="37" alt="Plans d'accès aux campus" border="0"/>
+					</a>
+				</xsl:if>
+			  </td>
+			  <td width="76">
+				<!-- Lien Contact -->
+				<xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]">
+					<a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:path}.html">
+						<img src="{$skincontext}/img/{$lang}/top_contact.gif" width="76" height="37" alt="Vos contacts à l'Université" border="0" />
+					</a>
+				</xsl:if>
+			  </td>
+			  <td width="75">
+				<!-- Lien Annuaire -->
+				<a href="http://www.annuaire.u-psud.fr/"><img src="{$skincontext}/img/{$lang}/top_annuaire.gif" width="75" height="37" alt="Annuaire de l'Universitï¿½" border="0" /></a>
+			  </td>
               <td width="93">
-                                <!-- Lien plan du site -->
-                                <xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]">
-                                    <a class="sitemap" href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]/@sitemap:path}.html">
-                                        <img src="{$skincontext}/img/{$lang}/top_sitemap.gif" width="93" height="37" alt="Plan du site web" border="0" />
-                                    </a>
-                                </xsl:if>                             
-                            </td>
+				<!-- Lien plan du site -->
+					<xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]">
+						<a class="sitemap" href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]/@sitemap:path}.html">
+							<img src="{$skincontext}/img/{$lang}/top_sitemap.gif" width="93" height="37" alt="Plan du site web" border="0" />
+						</a>
+					</xsl:if>                             
+			  </td>
               <td width="150" height="37"><xsl:call-template name="search"/></td>
-              <!-- <td width="68"><a href="http://intra.web.u-psud.fr/UPS.nsf/index.htm"><img src="{$skincontext}/img/{$lang}/top_intranet.gif" width="68" height="37" alt="Intranet (accï¿½s restreint)" border="0"/></a></td> -->
             </tr>
           </table>
         </td>
@@ -137,9 +126,9 @@
     <table height="32" border="0" cellpadding="0" cellspacing="0" width="100%">
       <tr>
         <td width="5">
-          <img src="{$skincontext}/img/top_navigation_borderleft.gif" width="5" height="32" />
+          <img src="{$skincontext}/img/top_navigation_borderleft.png" width="10" height="32" />
         </td>
-        <td background="{$skincontext}/img/top_navigation_bkg.gif" class="top_navigation">
+        <td background="{$skincontext}/img/top_navigation_bkg.png" class="top_navigation">
                     <xsl:for-each select="/cms/inputData/sitemap/page[@PLUGIN_TAGS_RUBRIQUE]">
                         <a href="{$cms-context}/{$lang}/{@sitemap:path}.html">
                             <xsl:attribute name="class">top_navigation<xsl:if test="@sitemap:current = 'true'">_on</xsl:if></xsl:attribute>
@@ -149,22 +138,21 @@
                     </xsl:for-each>
         </td>
         <td width="6">
-          <img src="{$skincontext}/img/top_navigation_borderright.gif" width="6" height="32" />
+          <img src="{$skincontext}/img/top_navigation_borderright.png" width="10" height="32" />
         </td>
       </tr>
     </table>
   </xsl:template>
 
   <xsl:template name="middle">
-    <table bgcolor="#ffffff" background="{$skincontext}/img/middle.jpg" border="0" cellspacing="0" cellpadding="0" width="100%">
+    <table bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" width="100%">
       <tr> <!-- bandeau -->
                 <xsl:choose>
                     <xsl:when test="$style != ''">
-                        <td background="{$stylecontext}/img/bandeau.jpg" height="80"></td>    
+                        <td background="{$stylecontext}/img/bandeau_web.jpg" height="80"></td>    
                     </xsl:when>
                     <xsl:otherwise>
-                        <td background="{$templatecontext}/default/img/bandeau.jpg" height="80"></td>
-                        
+                        <td background="{$templatecontext}/default/img/bandeau_web.jpg" height="80"></td>
                     </xsl:otherwise>
                 </xsl:choose>
         
@@ -211,20 +199,6 @@
         <td valign="top" rowspan="2">
         <xsl:variable name="rubrique" select="/cms/inputData/sitemap/page[@sitemap:in-path='true']" />
           <xsl:choose>
-            <xsl:when test="$style = 'formation2010' ">
-              <xsl:call-template name="new-menu"/>
-            </xsl:when>
-            <xsl:when test="@sitemap:title = 'Actualitï¿½s' ">
-              <xsl:call-template name="new-menu"/>
-            </xsl:when>
-            <xsl:when test="$style = 'recherche' ">
-              <xsl:call-template name="new-menu"/>
-            </xsl:when>
-            <!-- <xsl:when test="$rubrique/@title = 'Vie ï¿½tudiante' ">
-              <xsl:call-template name="new-menu"/>
-            </xsl:when> -->
-            <xsl:otherwise>
-          <xsl:choose>
             <xsl:when test="name(/cms/inputData/sitemap//page[@sitemap:current = 'true']/parent::*) = 'page'">
               <xsl:call-template name="navigation-menu"/> 
             </xsl:when>
@@ -232,8 +206,9 @@
               <xsl:call-template name="subnavigation"/> 
             </xsl:when>
           </xsl:choose>
-            </xsl:otherwise>
-          </xsl:choose>
+		 <div id="annexe_cg" style="margin-top: 20px;margin-left: 10px;">
+			<zone name="annexe_cg" level="0"/>
+		 </div>                                
         </td>
         <td colspan="2">
               <table border="0" cellspacing="0" cellpadding="0" height="28" width="100%" background="{$templatecontext}/default/img/page_title_bkg.gif" class="page_title_bkg">

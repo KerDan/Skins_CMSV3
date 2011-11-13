@@ -31,6 +31,10 @@
             <label i18n="true">SKIN_BO_ZONING_PAGE_FOCUS_LABEL</label>
             <description i18n="true">SKIN_BO_ZONING_PAGE_FOCUS_DESCRIPTION</description>        
         </zone>
+        <zone id="annexe_cg">
+            <label>Zone annexe colone de gauche</label>
+            <description>Zone optionnelle pour insérer des contenus annexe sous le menu de navigation</description>        
+        </zone>
 	</zones>
 	
 </template>
