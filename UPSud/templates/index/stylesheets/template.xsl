@@ -28,11 +28,12 @@
 	<xsl:template name="template">
 		<html>
 			<head>
-				<title>Université Paris-Sud 11</title>
+				<title>Université Paris-Sud</title>
+				<link href="{$skincontext}/css/u-psud.css" rel="stylesheet" type="text/css"/>
 				<link href="{$skincontext}/css/accueil.css" rel="stylesheet" type="text/css"/>
                 <link href="{$skincontext}/css/custom-services-contents.css" rel="stylesheet" type="text/css"/>
 				<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-				<meta name="description" content="Bienvenue sur le site de l'Université Paris-Sud 11, première université en terme de distinctions, plus grand campus de France!"/>
+				<meta name="description" content="Bienvenue sur le site de l'Université Paris-Sud, première université en terme de distinctions, plus grand campus de France!"/>
 				<meta name="keywords" content="études, formation, recherche, innovation, valorisation, science, médecine, pharmacie, droit, économie, gestion, staps" />
 				<script type="text/javascript" src="{$skincontext}/js/swfobject.js"></script>
 				<meta name="verify-v1" content="ciep7LAyVd2fzF72A795OAAHQ/eia1YdIwTzy3+pTS4=" /> <!-- balise meta pour vérification du site par google webtools -->
@@ -64,8 +65,8 @@
 	<xsl:template name="header">
 		<table border="0" cellspacing="0" cellpadding="0" width="100%">
 			<tr>
-				<td rowspan="3" height="108" width="210">
-					<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_ups.gif" width="200" height="64" alt="logo" border="0"/></a>
+				<td rowspan="3" height="120" width="136">
+					<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_psud.png" width="136" height="120" alt="logo" border="0"/></a>
 				</td>
 				<td valign="top" align="right">
 					<table height="37" border="0" cellpadding="0" cellspacing="0"> <!-- Sur la page d'accueil, la toolbar est affichée dans le contenu de la page -->
@@ -95,7 +96,7 @@
 	</xsl:template>
 
 	<xsl:template name="middle">
-		<table bgcolor="#ffffff" background="{$skincontext}/img/middle.jpg" border="0" cellspacing="0" cellpadding="0" width="100%">
+		<table bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" width="100%">
 			<tr> <!-- bandeau -->
 				<td background="{$skincontext}/img/bandeau_accueil.jpg" height="80">
 					&#160;
@@ -135,7 +136,7 @@
                         <input type="text" name="textfield" id="textfield" class="text_field"/>
                     </td>
                     <td width="16" valign="top">
-                        <input type="image" src="{$skincontext}/img/top_search.gif" value="submit" border="0" style="margin-top: 5px;"/>
+                        <input type="image" src="{$skincontext}/img/zoom.png" value="submit" border="0" style="margin-top: 5px; margin-left: 10px"/>
                     </td>
                 </tr>
             </form>            
@@ -146,9 +147,9 @@
 		<table height="32" border="0" cellpadding="0" cellspacing="0" width="100%">
 			<tr>
 				<td width="5">
-					<img src="{$skincontext}/img/top_navigation_borderleft.gif" width="5" height="32" />
+					<img src="{$skincontext}/img/top_navigation_borderleft.png" width="10" height="32" />
 				</td>
-				<td background="{$skincontext}/img/top_navigation_bkg.gif" class="top_navigation">
+				<td background="{$skincontext}/img/top_navigation_bkg.png" class="top_navigation">
 					<xsl:for-each select="/cms/inputData/sitemap/page[@PLUGIN_TAGS_RUBRIQUE]">
 						<a href="{$cms-context}/{$lang}/{@sitemap:path}.html">
 							<xsl:attribute name="class">top_navigation<xsl:if test="@sitemap:current = 'true'">_on</xsl:if></xsl:attribute>
@@ -158,7 +159,7 @@
 					</xsl:for-each>
 				</td>
 				<td width="6">
-					<img src="{$skincontext}/img/top_navigation_borderright.gif" width="6" height="32" />
+					<img src="{$skincontext}/img/top_navigation_borderright.png" width="10" height="32" />
 				</td>
 			</tr>
 		</table>
@@ -183,7 +184,10 @@
     							<xsl:call-template name="toolbar_es"/>
     							<xsl:call-template name="menu_es"/>
     							<xsl:call-template name="composantes"/>
-    						</td>
+                                 <div id="annexe_cd" style="margin-top: 20px;margin-left: 10px;">
+									<zone name="annexe_cd" level="0"/>
+                                </div>                                
+   						</td>
     		   			</tr>
     				</table>
     				</xsl:when>
@@ -199,10 +203,8 @@
     							<xsl:call-template name="toolbar_en"/>
     							<xsl:call-template name="menu_en"/>
     							<xsl:call-template name="composantes"/>
-                                <div style="margin-top: 20px;margin-left: 10px;">
-                                    <a href="http://www.campus-paris-saclay.fr/">
-                                        <img src="{$skincontext}/img/accueil/CampusParisSaclay.png" alt="Membre Fondateur du Campus Paris Saclay"/>
-                                    </a>
+                                 <div id="annexe_cd" style="margin-top: 20px;margin-left: 10px;">
+									<zone name="annexe_cd" level="0"/>
                                 </div>                                
     						</td>
     		   			</tr>
@@ -213,9 +215,11 @@
 					<tr>
           				<td width="200" valign="top">
 							<xsl:call-template name="menu_fr"/>
+							<div id="annexe_cg" style="margin-top: 20px;margin-left: 10px;">
+								<zone name="annexe_cg" level="0"/>
+                            </div>                                
    						</td>
 						<td bgcolor="white" valign="top">
-							<!-- <xsl:call-template name="flash"/> -->
 							<div id="actus">
                                 <zone name="default" level="2"/>
                             </div>
@@ -226,17 +230,16 @@
 							<xsl:call-template name="profils"/>
 							<xsl:call-template name="direct"/>
 							<xsl:call-template name="composantes"/>
-                            <div style="margin-top: 20px;margin-left: 10px;">
-                                <a href="http://www.campus-paris-saclay.fr/">
-                                    <img src="{$skincontext}/img/accueil/CampusParisSaclay.png" alt="Membre Fondateur du Campus Paris Saclay"/>
-                                </a>
-                            </div>
+                                 <div id="annexe_cd" style="margin-top: 20px;margin-left: 10px;">
+									<zone name="annexe_cd" level="0"/>
+                                </div>                                
 						</td>
 		   			</tr>
 				</table>
 				</xsl:otherwise>
 				</xsl:choose>
 				</span>
+
 				</td>
 			</tr>
 		</table>
@@ -342,22 +345,13 @@
 		</div>
 	</xsl:template>
 
-
-	<xsl:template name="flash">
-<div id="flashcontent"> </div>
-<script type="text/javascript">
-		var so = new SWFObject("<xsl:value-of select="$skincontext"/>/swf/actu.swf", "accueil", "490", "250", "6", "#ffffff");
-		so.write("flashcontent");
-</script>
-	</xsl:template>
-
 	<xsl:template name="toolbar_fr">
 		<div id="toolbar">
 			<ul>
                 <!-- Lien plan d'accès -->
                 <xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]">
                     <li id="plan">
-                        <a class="sitemap" href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]/@sitemap:path}.html">
+                        <a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]/@sitemap:path}.html">
                             <span>
                                 <xsl:value-of select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_MAP]/@sitemap:title"/>
                             </span>
@@ -367,7 +361,7 @@
                 <!-- Lien Contact -->
                 <xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]">
                     <li id="contacts">
-                        <a class="sitemap" href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:path}.html">
+                        <a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:path}.html">
                             <span>
                                 <xsl:value-of select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:title"/>
                             </span>
@@ -375,18 +369,18 @@
                     </li>
                 </xsl:if>
                 <!-- Lien Annuaire -->
-				<li id="annuaire"><a class="sitemap" href="http://www.annuaire.u-psud.fr/" onClick="javascript: pageTracker._trackPageview ('/adonis');">Annuaire</a></li>
+				<li id="annuaire"><a href="http://www.annuaire.u-psud.fr/" onClick="javascript: pageTracker._trackPageview ('/adonis');">Annuaire</a></li>
 				<!-- Lien plan du site -->
                 <xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]">
                     <li id="sitemap">
-                        <a class="sitemap" href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]/@sitemap:path}.html">
+                        <a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]/@sitemap:path}.html">
                             <span>
                                 <xsl:value-of select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_SITEMAP]/@sitemap:title"/>
                             </span>
                         </a>
                     </li>
                 </xsl:if>                
-				<li id="intranet"><a class="sitemap" href="http://portail.u-psud.fr/" onClick="javascript: pageTracker._trackPageview ('/ent');">ENT / Intranet</a></li>
+				<li id="intranet"><a href="http://portail.u-psud.fr/" onClick="javascript: pageTracker._trackPageview ('/ent');">ENT / Intranet</a></li>
 			</ul>
 		<xsl:call-template name="search"/>
 		</div>
@@ -398,7 +392,7 @@
                 <!-- Lien Contact -->
                 <xsl:if test="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]">
                     <li id="contacts">
-                        <a class="sitemap" href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:path}.html">
+                        <a href="{$cms-context}/{$lang}/{/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:path}.html">
                             <span>
                                 <xsl:value-of select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_TOP_LINKS_CONTACT]/@sitemap:title"/>
                             </span>
