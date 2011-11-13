@@ -1,0 +1,106 @@
+body 
+{
+margin-left: 20px;
+margin-top: 0px;
+margin-right: 0px;
+margin-bottom: 0px;
+font-family: Verdana, sans-serif;
+font-size: 10px;
+color: #666;
+}
+
+H1 
+{
+FONT-WEIGHT: bold; 
+FONT-SIZE: 17px; 
+COLOR: #255192; 
+FONT-FAMILY: Verdana, sans-serif;
+padding-left: 10px;
+padding-top: 5px;
+margin: 0px;
+}
+
+H2 
+{
+FONT-WEIGHT: bold; 
+FONT-SIZE: 13px; 
+COLOR: #007DBD; 
+FONT-FAMILY: Verdana, sans-serif;
+margin: 0px;
+padding-left: 9px;
+}
+
+H3 
+{
+FONT-WEIGHT: normal; 
+FONT-SIZE: 10px; 
+COLOR: #255192; 
+FONT-FAMILY: Verdana, sans-serif;
+padding-left: 29px;
+margin: 0px;
+}
+
+ul 
+{
+padding-left: 26px;
+margin: 0px;
+list-style: circle;
+FONT-WEIGHT: normal; 
+FONT-SIZE: 10px; 
+COLOR: #666; 
+FONT-FAMILY: Verdana, sans-serif;
+}
+
+table th
+{
+FONT-WEIGHT: bold; 
+FONT-SIZE: 10px; 
+COLOR: #999; 
+FONT-FAMILY: Verdana, sans-serif;
+text-align: center;
+}
+
+table td
+{
+FONT-WEIGHT: normal; 
+FONT-SIZE: 10px; 
+COLOR: #999; 
+FONT-FAMILY: Verdana, sans-serif;
+}
+
+table.table-border
+{
+border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
+border-style: solid;
+border-width:1px;
+}
+
+table.table-border th
+{
+margin: 1px;
+border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
+border-style: solid;
+border-width:1px;
+}
+
+table.table-border td
+{
+margin: 1px;
+border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
+border-style: solid;
+border-width:1px;
+}
+
+a
+{
+font-weight: normal;
+font-size: 10px;
+color: #007DBD;
+font-family: Verdana,sans-serif;
+text-decoration: none;
+}
+.page_title_bkg
+{
+  background-position: right;
+  background-repeat: repeat-y;
+}
