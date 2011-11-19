@@ -23,7 +23,6 @@
 		exclude-result-prefixes="sitemap">
 
 	<xsl:import href="skin://stylesheets/commons.xsl" />
-
 	<!-- template général pour la page d'accueil de l'université -->
 	<xsl:template name="template">
 		<html>
@@ -185,7 +184,7 @@
     							<xsl:call-template name="menu_es"/>
     							<xsl:call-template name="composantes"/>
                                  <div id="annexe_cd" style="margin-top: 20px">
-									<zone name="annexe_cd" level="0"/>
+									<zone name="zone-right-home" level="0"/>
                                 </div>                                
    						</td>
     		   			</tr>
@@ -204,7 +203,7 @@
     							<xsl:call-template name="menu_en"/>
     							<xsl:call-template name="composantes"/>
                                  <div id="annexe_cd" style="margin-top: 20px;">
-									<zone name="annexe_cd" level="0"/>
+									<zone name="zone-right-home" level="0"/>
                                 </div>                                
     						</td>
     		   			</tr>
@@ -216,14 +215,13 @@
           				<td width="200" valign="top">
 							<xsl:call-template name="menu_fr"/>
 							<div id="annexe_cg" style="margin-top: 20px;">
-								<zone name="annexe_cg" level="0"/>
+								<zone name="zone-left-home" level="0"/>
                             </div>                                
    						</td>
 						<td bgcolor="white" valign="top">
 							<div id="actus">
                                 <zone name="default" level="2"/>
                             </div>
-							<xsl:call-template name="logoCPU"/>
 						</td>
 						<td width="200" valign="top">
 							<xsl:call-template name="toolbar_fr"/>
@@ -231,7 +229,7 @@
 							<xsl:call-template name="direct"/>
 							<xsl:call-template name="composantes"/>
                                  <div id="annexe_cd" style="margin-top: 20px;">
-									<zone name="annexe_cd" level="0"/>
+									<zone name="zone-right-home" level="0"/>
                                 </div>                                
 						</td>
 		   			</tr>
@@ -464,12 +462,6 @@
                 </ul>
     		</div>
         </xsl:if>
-	</xsl:template>
-
-    <xsl:template name="logoCPU">
-		<div>
-			<img src="{$skincontext}/img/logoCPU.jpg" alt="L'université est une chance. Saisissons la!" height="136" width="450" border="0" />
-		</div>
 	</xsl:template>
 
 </xsl:stylesheet>
