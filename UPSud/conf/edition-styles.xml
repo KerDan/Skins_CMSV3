@@ -14,6 +14,14 @@
    See the License for the specific language governing permissions and
    limitations under the License.
    -->
+<!--
+	Fichier obligatoire, ne pas effacer 
+	Définition des styles dans l'éditeur : boutons et content
+	cf https://wiki.ametys.org/display/AMETYSV3/Inline+editor+styles
+	
+	ajouts et modifications des styles
+		paragraphes : h4;  
+-->
 <styles>
 	<para>
 		<import>
@@ -44,6 +52,14 @@
 				<cssclass>htmleditor-h3</cssclass>
 			</button>
 			<inline-editor>h3</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label>Titre 4</label>
+				<description>Utilisé pour les titres de niveaux inférieurs</description>
+				<cssclass>htmleditor-h4</cssclass>
+			</button>
+			<inline-editor>h4</inline-editor>
 		</style>
 		<style>
 			<button>
