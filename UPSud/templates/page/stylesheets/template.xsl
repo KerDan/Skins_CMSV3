@@ -35,6 +35,9 @@
                          <link rel="stylesheet" href="{$stylecontext}/css/style.css" type="text/css"/>                         
                     </xsl:if>
                 <link href="{$skincontext}/css/custom-services-contents.css" rel="stylesheet" type="text/css"/>
+                <link rel="shortcut icon" href="{$skincontext}/ico/favicon.ico" />
+                <link rel="icon" type="image/png" href="{$skincontext}/ico/icon.png" />
+                <link rel="apple-touch-icon" href="{$skincontext}/ico/apple-touch-icon.png" />
       </head>
       
       <body>
