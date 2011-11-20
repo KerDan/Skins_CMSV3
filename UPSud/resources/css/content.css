@@ -1,141 +1,439 @@
-H1 
-{
-FONT-WEIGHT: bold; 
-FONT-SIZE: 17px; 
-COLOR: #255192; 
-FONT-FAMILY: Verdana, sans-serif;
-padding-left: 10px;
-padding-top: 5px;
-margin: 0px;
+/* Styles utilisés dans l'éditeur (prefixed by .mceContentBody) et en mode prévisualisation et rendu final (prefixed by .content) */
+/* Daniel Kerboeuf, novembre 2011 */
+
+/************************************/
+/*		Styles des titres			*/
+/************************************/
+
+/* titre principale de la page (titre long s'il existe, sinon titre court) */
+h1.title {
 }
 
-H2 
-{
-FONT-WEIGHT: bold; 
-FONT-SIZE: 14px; 
-COLOR: #007DBD; 
-FONT-FAMILY: Verdana, sans-serif;
-margin: 0px;
-padding-left: 9px;
+/* les titres des contenus et services ne sont pas affichés dans la zone centrale*/
+/* sous-titres des contenus pas utilisés pour le moment */
+.content h2 {
+	display:none;
 }
 
-H3 
-{
-FONT-WEIGHT: normal; 
-FONT-SIZE: 12px; 
-COLOR: #255192; 
-FONT-FAMILY: Verdana, sans-serif;
-padding-left: 29px;
-margin: 0px;
+/* titre de premier niveau dans l'éditeur = titre de niveau 3 dans le contenu de la zone centrale de la page */
+.mceContentBody h1, .content h3 {
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold; 
+	font-size: 1.636em; 
+	color: #007dbd;
+	padding-top: 1em;
+	margin: 0;
+}
+.mceContentBody h2, .content h4 {
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold; 
+	font-size: 1.273em; 
+	color: #007dbd;
+	padding-top: 1em;
+	margin: 0;
 }
 
-
-ul 
-{
-padding-left: 26px;
-margin: 0px;
-list-style: circle;
-FONT-WEIGHT: normal; 
-FONT-SIZE: 10px; 
-COLOR: #666; 
-FONT-FAMILY: Verdana, sans-serif;
+.mceContentBody h3, .content h5 {
+	font-weight: bold; 
+	font-size: 1.091em; 
+	color: #007dbd;
+	padding-top: 1em;
+	margin: 0;
 }
 
-.table
-{
-border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
-border-style: solid;
-border-width:1px;
+.mceContentBody h4, .content h6 {
+	font-weight: bold; 
+	padding-top: 1em;
+	margin: 0;
 }
 
-.table td
-{
-margin: 1px;
-border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
-border-style: solid;
-border-width:1px;
-FONT-WEIGHT: normal; 
-FONT-SIZE: 10px; 
-COLOR: #999; 
-FONT-FAMILY: Verdana, sans-serif;
+/************************************/
+/*		Styles de paragraphes		*/
+/************************************/
+.mceContentBody p, .content p {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 15px;
+	color: #333;
+	font-weight: normal;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-.page_navigation 
-{
-font-family: Verdana, sans-serif;
-font-size: 10px;
-color: #255192;
-FONT-WEIGHT: normal;
-padding-top: 3px;
-padding-left: 15px;
+.mceContentBody p.narrow-spaced,
+.content p.narrow-spaced {
+	line-height : 110%;
+	margin-top : 0;
+	margin-bottom : 0;
 }
 
-.page_navigation_links 
-{
-font-family: Verdana, sans-serif;
-font-size: 10px;
-color: #255192;
-FONT-WEIGHT: normal;
-}
-a.page_navigation_links 
-{
-color: #255192;
-text-decoration: none;
-}
-a.page_navigation_links:hover
-{
-color: #1BBCF0;
-text-decoration: none;
+.mceContentBody p.introduction,
+.content p.introduction {
+	letter-spacing: 1px;
+	font-size: 0.9em;
+	font-weight : bold;
 }
 
-a.print
-{
-font-family: Verdana,sans-serif;
-font-size: 10px;
-color: #007DBD;
-font-weight: bold;
-text-decoration: none;
+.mceContentBody p.important,
+.content p.important {
+	border: 1px solid #006FA1;
+	letter-spacing: 1px;
+	color: #006FA1;
+	background-color: #D8EDF8;
+	padding: 10px;
 }
-a.print:hover
-{
-color: #255192;
-text-decoration: none;
+
+.mceContentBody p.secondary,
+.content p.secondary {
+	color : #808080;
+	font-style : italic;
+	font-size : 0.9em;
+	padding-left:35px;
 }
+
+.mceContentBody p.sub-title,
+.content p.sub-title {
+	font-weight: bold;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	font-size: 0.9em;
+}
+
+/************************************/
+/*			Styles de liens			*/
+/************************************/
+.mceContentBody a:hover,
+.mceContentBody a:link,
+.mceContentBody a:visited,
+.mceContentBody a:active,
+.content a:hover,
+.content a:link,
+.content a:visited,
+.content a:active {
+	text-decoration : underline;
+	color : #006BB1;
+}
+
+.mceContentBody a.invisible,
+.mceContentBody a.invisible:hover,
+.mceContentBody a.invisible:link,
+.mceContentBody a.invisible:visited,
+.mceContentBody a.invisible:active
+{
+	border-bottom: 1px dashed #000000;
+}
+.mceContentBody a.invisible,
+.mceContentBody a.invisible:hover,
+.mceContentBody a.invisible:link,
+.mceContentBody a.invisible:visited,
+.mceContentBody a.invisible:active,
+.content a.invisible,
+.content a.invisible:hover,
+.content a.invisible:link,
+.content a.invisible:visited,
+.content a.invisible:active
+{
+	text-decoration: none !important;
+	color: #000000 !important;
+}
+
+.mceContentBody a.download,
+.mceContentBody a.download:hover,
+.mceContentBody a.download:link,
+.mceContentBody a.download:visited,
+.mceContentBody a.download:active,
+.content a.download,
+.content a.download:hover,
+.content a.download:link,
+.content a.download:visited,
+.content a.download:active
+{
+	text-decoration : underline;
+	color : #006BB1 !important;
+	padding-left: 15px;
+	background-image: url(../img/download.png);
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.mceContentBody a.know-more,
+.mceContentBody a.know-more:hover,
+.mceContentBody a.know-more:link,
+.mceContentBody a.know-more:visited,
+.mceContentBody a.know-more:active,
+.content a.know-more,
+.content a.know-more:hover,
+.content a.know-more:link,
+.content a.know-more:visited,
+.content a.know-more:active
+{
+	padding: 1px;
+	padding-top: 0px;
+	padding-right: 16px;
+	
+	background-image: url(../img/knowmore.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-color: #5884df;
+	
+	color: #ffffff !important;
+	text-decoration : underline;
+}
+
+.mceContentBody a.external,
+.mceContentBody a.external:hover,
+.mceContentBody a.external:link,
+.mceContentBody a.external:visited,
+.mceContentBody a.external:active,
+.content a.external,
+.content a.external:hover,
+.content a.external:link,
+.content a.external:visited,
+.content a.external:active,
+.module-box a.external
+{
+	color: #006BB1 !important;
+	padding-right: 18px;
+	background-image: url(../img/external.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	text-decoration : underline;
+}
+
+.content a.broken,
+.content a.broken:hover,
+.content a.broken:link,
+.content a.broken:visited,
+.content a.broken:active {
+	color: #ffffff !important;
+	background-color: #ff0000 !important;
+}
+
+/************************************/
+/*			Listes à puces			*/
+/************************************/
+.mceContentBody ul,
+.mceContentBody ul.disc,
+.content ul.disc {
+	list-style-type : disc;
+	list-style-image : none;	
+}
+
+.mceContentBody ul.square,
+.content ul.square {
+	list-style-type : square;
+	list-style-image : none;	
+}
+
+.mceContentBody ul.arrow,
+.content ul.arrow {
+	list-style-type: none;
+	list-style-image : url(../img/arrow.png);	
+}
+
+.mceContentBody ul.check,
+.content ul.check {
+	list-style-type: none;
+	list-style-image : url(../img/check.png);		
+}
+
+/************************************/
+/*			listes numérotées		*/
+/************************************/
+.mceContentBody ol,
+.mceContentBody ol.arabic,
+.content ol.arabic {
+	list-style-type: decimal;
+	list-style-image : none;	
+}
+
+.mceContentBody ol.lowerroman,
+.content ol.lowerroman {
+	list-style-type: lower-roman;
+	list-style-image : none;	
+}
+
+.mceContentBody ol.upperroman,
+.content ol.upperroman {
+	list-style-type: upper-roman;
+	list-style-image : none;	
+}
+
+.mceContentBody ol.loweralpha,
+.content ol.loweralpha {
+	list-style-type: lower-alpha;
+	list-style-image : none;	
+}
+
+.mceContentBody ol.upperalpha,
+.content ol.upperalpha {
+	list-style-type: upper-alpha;
+	list-style-image : none;	
+}
+
+/************************************/
+/*		Styles de tableaux			*/
+/************************************/
+.mceContentBody table,
+.content table {
+	border-collapse: collapse;
+}
+
+.mceContentBody table tr th,
+.mceContentBody table tr td,
+.content table tr th,
+.content table tr td {
+	padding:5px;
+}
+
+.mceContentBody table tr th p,
+.mceContentBody table tr td p,
+.content table tr th p,
+.content table tr td p {
+	margin: 0px;
+}
+
+.mceContentBody table.simple,
+.mceContentBody table.simple tr th,
+.mceContentBody table.simple tr td,
+.content table.simple,
+.content table.simple tr th,
+.content table.simple tr td {
+	border: 1px solid black;	
+}
+
+.content table.invisible,
+.content table.invisible tr th,
+.content table.invisible tr td {
+	border: 0px none transparent;	
+}
+
+.mceContentBody table.data,
+.content table.data {
+	border: 1px solid #006FA1;	
+}
+
+.mceContentBody table.data tr.odd,
+.content table.data tr.odd {
+	background-color: #F2F2F2;
+}
+
+.mceContentBody table.data tr th,
+.content table.data tr th {
+	background-color: #006BB1;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.mceContentBody table.datalight,
+.content table.datalight {
+	border: 1px solid #006FA1;	
+}
+
+.mceContentBody table.datalight tr,
+.content table.datalight tr {
+	border: 1px solid #006FA1;	
+}
+
+.mceContentBody table.datalight tr th,
+.content table.datalight tr th {
+	color: #006FA1;
+	font-weight: bold;
+	text-align: center;
+}
+
+.mceContentBody table.datastrong,
+.content table.datastrong {
+	border: 1px solid #006BB1;	
+}
+
+.mceContentBody table.datastrong tr th,
+.content table.datastrong tr th {
+	background-color: #006BB1;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+.mceContentBody table.datastrong tr td,
+.content table.datastrong tr td {
+	border: 1px solid #006BB1;	
+}
+
+.mceContentBody table.datastrong tr,
+.content table.datastrong tr.odd {
+	background-color: #F2F2F2;
+}
+
+.content table.datastrong tr.even {
+	background-color: #FFFFFF;	
+}
+
+.mceContentBody table caption,
+.content table caption {
+	color : #808080;
+	font-size : 0.9em;
+	padding-bottom: 5px;
+}
+
+/************************************/
+/*			Styles d'images			*/
+/************************************/
+.content img {
+}
+
+.mceContentBody img.simple,
+.content img.simple {
+	border: 1px solid #2A2A2A;
+	margin: 10px;
+	padding: 0px;	
+}
+
+.mceContentBody img.invisible,
+.content img.invisible {
+	border-style: none;
+	margin: 10px;
+	padding: 0px;
+}
+
+.mceContentBody img.frame,
+.content img.frame {
+	border: 1px solid #2A2A2A;
+	background-color: #ffffff;
+	margin: 10px;
+	padding: 3px;
+}
+
+.mceContentBody img.largeframe,
+.content img.largeframe {
+	border: 1px solid #2A2A2A;	
+	background-color: #ffffff;
+	margin: 10px;
+	padding: 8px;	
+}
+
+.mceContentBody img.floatleft,
+.content .floatleft {
+	float: left;
+	margin: 0px;
+	margin-right: 10px;	
+}
+
+.mceContentBody img.floatright,
+.content .floatright {
+	float: right;
+	margin: 0px;
+	margin-left: 10px;	
+}
+
+/********************************************************************/
 
 .page_title_bkg
 {
   background-position: right;
   background-repeat: repeat-y;
 }
-
-.path 
-{
-FONT-WEIGHT: normal; 
-FONT-SIZE: 10px; 
-COLOR: #333;
-FONT-FAMILY: Arial, sans-serif;
-}
-a.path 
-{
-COLOR: #339;
-TEXT-DECORATION: none
-}
-a.path:hover 
-{
-COLOR: #1BBCF0; 
-TEXT-DECORATION: none;
-}
-
-.path_on 
-{
-FONT-WEIGHT: normal;
-FONT-SIZE: 10px;
-COLOR: #007DBD; 
-FONT-FAMILY: Arial, sans-serif;
-text-align:right;
-padding-right: 10px;
-}
-
 
 #focus  div {
 	width:150px;
@@ -195,187 +493,3 @@ padding-right: 10px;
 	background: #f7f7fe;
 	text-align: center;
 }
-
-.top 
-{
-FONT-WEIGHT: normal; 
-FONT-SIZE: 10px; 
-COLOR: #007DBD; 
-FONT-FAMILY: Verdana, sans-serif;
-}
-a.top
-{
-COLOR: #007DBD; 
-TEXT-DECORATION: none
-}
-a.top:hover 
-{
-COLOR: #1BBCF0;
-TEXT-DECORATION: none;
-}
-
-.content 
-{
-font-family: Verdana, sans-serif;
-font-size: 11px;
-line-height: 15px;
-color: #333;
-font-weight: normal;
-padding-left: 15px;
-padding-right: 15px;
-}
-
-.content h1 
-{
-font-weight: bold; 
-font-size: 1.636em; 
-color: #007dbd;
-padding-top: 1em;
-margin: 0;
-}
-
-.content h2
-{
-font-weight: bold; 
-font-size: 1.273em; 
-color: #007dbd;
-margin: 0;
-padding-top: 1em;
-}
-
-.content h3
-{
-font-weight: bold; 
-font-size: 1.091em; 
-color: #007dbd;
-padding-top: 1em;
-margin: 0;
-}
-
-.content a
-{
-font-weight: normal; 
-color: #005d9d;
-text-decoration: none;
-}
-
-.content a:hover 
-{
-background-color: #1bbcf0;
-color: #fff;
-text-decoration: none;
-}
-
-.content p.error
-{
-font-size: 10px;
-color : red;
-text-decoration : underline;
-}
-
-.content table.table-border
-{
-border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
-border-style: solid;
-border-width:1px;
-}
-
-.content table.table-border th
-{
-margin: 1px;
-border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
-border-style: solid;
-border-width:1px;
-FONT-WEIGHT: bold; 
-FONT-SIZE: 10px; 
-COLOR: #003;
-FONT-FAMILY: Verdana, sans-serif;
-}
-
-.content table.table-border td
-{
-margin: 1px;
-border-color:#eeeeee #eeeeee #eeeeee #eeeeee;
-border-style: solid;
-border-width:1px;
-FONT-WEIGHT: normal; 
-FONT-SIZE: 11px; 
-COLOR: #333;
-FONT-FAMILY: Verdana, sans-serif;
-}
-
-.content table
-{
-}
-
-.content table th
-{
-margin: 1px;
-FONT-WEIGHT: bold; 
-FONT-SIZE: 10px; 
-COLOR: #999;
-FONT-FAMILY: Verdana, sans-serif;
-}
-
-.content table td
-{
-margin: 1px;
-FONT-WEIGHT: normal; 
-FONT-SIZE: 11px; 
-COLOR: #333; 
-FONT-FAMILY: Verdana, sans-serif;
-}
-
-.mceContentBody p.important,
-.content p.important {
-  border: 1px solid #006FA1;
-  letter-spacing: 1px;
-  color: #006FA1;
-  background-color: #D8EDF8;
-  padding: 10px;
-}
-
-/* menu de la colone de gauche  */
-
-#menu { 
-padding: 0;
-
-margin: 20px 20px 10px 10px;
-width: 180px;
-}
-
-#menu h2   {
-	font-family: "Trebuchet MS";
-	color: #fff;
-	font-size: 0.9em;
-	font-weight: bold;
-	background: #005992;
-	margin: 0;
-	padding: 0 0 0 9px;
-	background-image: url("../img/menu_R1.gif"); background-repeat: no-repeat; background-position: right top;
-}
-#menu ul {
- 	list-style: none;
- 	padding: 0; margin: 0;
-}
-#menu ul li  {
-	color: #000;
-	line-height: 1.5em;
-	border-bottom: 2px solid white;
-}
-
-#menu ul li a   {
-	background: #f7f7fe url("../img/bullet_blue.png") no-repeat left center;
-	text-align: left;
-	padding-left: 20px;
-	display: block;
-}
-#menu ul ul  a {
-	background: #fff;
-}
-
-#menu ul li a:hover,
-#menu ul li a:focus,
-#menu ul li a:active  { background: #fefefe url("../img/bullet_orange.png") no-repeat left center }
-
-#menu ul li a.flag  { background: #fefefe url("../img/flag_blue.png") no-repeat left center }
