@@ -225,7 +225,7 @@
                     		</xsl:otherwise>
                     	</xsl:choose>
                     </xsl:variable>
-                    <h1><xsl:value-of select="$title"/></h1>
+                    <h1 class="title"><xsl:value-of select="$title"/></h1>
                    </td>
                 </tr>
               </table>
@@ -240,7 +240,7 @@
                           <br />
                                 <br />
                                 <div class="content">
-                                    <zone name="default" level="0"/>
+                                    <zone name="default" level="2"/>
                                 </div>
                           <div align="right"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .<br />
                           <br />
