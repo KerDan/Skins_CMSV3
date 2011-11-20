@@ -208,7 +208,7 @@
           </xsl:choose>
 		 <div id="annexe_cg" style="margin-top: 20px;margin-left: 10px;">
 			<zone name="zone-left-page" level="0"/>
-		 </div>                                
+		 </div>
         </td>
         <td colspan="2">
               <table border="0" cellspacing="0" cellpadding="0" height="28" width="100%" background="{$templatecontext}/default/img/page_title_bkg.gif" class="page_title_bkg">
@@ -251,7 +251,7 @@
                     </table>
         </td>
         <td valign="top">
-          <xsl:call-template name="focus"/>
+			<xsl:call-template name="focus"/>
         </td>
       </tr>
     </table>
