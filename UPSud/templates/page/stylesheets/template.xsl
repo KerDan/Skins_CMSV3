@@ -216,14 +216,14 @@
                   <td width="33"><img src="{$templatecontext}/default/img/page_title_bullet.gif" width="33" height="32"/></td>
                   <td valign="top">
                     <xsl:variable name="title">
-                      <xsl:choose>
-                                        <xsl:when test="cms/page/pageContents/zone[@name='default']/zoneItem/information[type = 'SERVICE']">
-                                            <xsl:value-of select="cms/page/@title"/>
-                                        </xsl:when>
-                        <xsl:when test="cms/page/pageContents/zone[@name='default']/zoneItem/html/head/title != ''">
-                          <xsl:value-of select="cms/page/pageContents/zone[@name='default']/zoneItem/html/head/title"/>
-                        </xsl:when>
-                      </xsl:choose>
+                    	<xsl:choose>
+                    		<xsl:when test="cms/page/@long-title != ''">
+                    			<xsl:value-of select="cms/page/@long-title"/>
+                    		</xsl:when>
+                    		<xsl:otherwise>
+                    			<xsl:value-of select="cms/page/@title"/>
+                    		</xsl:otherwise>
+                    	</xsl:choose>
                     </xsl:variable>
                     <h1><xsl:value-of select="$title"/></h1>
                    </td>
