@@ -446,10 +446,10 @@ h1.title {
 /************************************************/
 /*			Styles pour la zone focus			*/
 /************************************************/
-#focus div div {
+#focus div#ametys-cms-zone-focus div {
 	width:150px;
 	margin:0;
-	padding: 10px 20px 10px 10px;
+	padding: 20px 7px 5px 20px;
 	font-family: Verdana, sans-serif;
 	font-size: 10px;
 	background: transparent;
@@ -503,6 +503,23 @@ h1.title {
 #focus div.image {
 	background: #f7f7fe;
 	text-align: center;
+}
+
+
+/************************************************/
+/*		Styles pour la zone de gauche			*/
+/************************************************/
+#annexe_cg div#ametys-cms-zone-zone-left-page div {
+	width:150px;
+	margin:0;
+	padding: 20px 20px 5px 10px;
+	font-family: Verdana, sans-serif;
+	font-size: 10px;
+	background: transparent;
+}
+
+#annexe_cg h1.title {
+	display:none;
 }
 
 /********************************************************************/
