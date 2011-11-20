@@ -61,14 +61,14 @@
 			</button>
 			<inline-editor>h4</inline-editor>
 		</style>
-		<style>
+	<!-- <style>
 			<button>
 				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_LABEL</label>
 				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_DESCRIPTION</description>
 				<cssclass>htmleditor-p-sub-title</cssclass>
 			</button>
 			<inline-editor>p.sub-title</inline-editor>
-		</style>
+	</style> -->
 		<style>
 			<button>
 				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_LABEL</label>

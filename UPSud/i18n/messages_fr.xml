@@ -78,15 +78,15 @@
 	<message key="SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_LABEL">Sous-titre</message>
 	<message key="SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_DESCRIPTION">Style de paragraphe permettant d'accompagner un titre ou de remplacer un titre peu important</message>
 	<message key="SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_LABEL">Introduction</message>
-	<message key="SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_DESCRIPTION">Style de paragraphe à utiliser sur l'introduction du document ou d'une grande section (titre 1)</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_DESCRIPTION">Style de paragraphe à utiliser en introduction du document</message>
 	<message key="SKIN_BO_EDITOR_STYLES_PARA_NORMAL_LABEL">Normal</message>
-	<message key="SKIN_BO_EDITOR_STYLES_PARA_NORMAL_DESCRIPTION">Style par défaut</message>
-	<message key="SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_LABEL">Sans interligne</message>
-	<message key="SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_DESCRIPTION">Style permettant d'écrire du texte continu. Permet d'écrire du texte de manière compacte mais en perdant de la lisibilité</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_NORMAL_DESCRIPTION">Style de paragraphe par défaut</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_LABEL">Compact</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_DESCRIPTION">Permet d'écrire du texte de manière compacte mais en perdant de la lisibilité</message>
 	<message key="SKIN_BO_EDITOR_STYLES_PARA_IMPORTANT_LABEL">Important</message>
 	<message key="SKIN_BO_EDITOR_STYLES_PARA_IMPORTANT_DESCRIPTION">Passage important d'un document qui attrire l'attention du lecteur</message>
-	<message key="SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_LABEL">Secondaire</message>
-	<message key="SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_DESCRIPTION">Passage secondaire d'un document (souvent utilisé en bas de page), à utiliser pour des mentions ou des références</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_LABEL">Note</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_DESCRIPTION">A utiliser pour des mentions ou des références par exemple...</message>
 
 	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATALIGHT">Clair</message>
 	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATALIGHT_DESC">Tableau de données dont les couleurs et les bordures sont légères.&lt;br/&gt;&lt;br/&gt;Utilisez ce style de tableau quand les données présentées n'ont pas une grande importance pour la compréhension du contenu.</message>
