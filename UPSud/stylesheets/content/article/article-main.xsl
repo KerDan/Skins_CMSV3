@@ -86,11 +86,11 @@
             <h2 class="subtitle"><xsl:value-of select="metadata/document-subtitle"/></h2>
         </xsl:if>
             
-        <xsl:if test="metadata/illustration/image">
+        <!-- <xsl:if test="metadata/illustration/image">
             <div class="content-illustration">
                 <img src="{resolver:resolveBoundedImage(metadata/illustration/image/@type, metadata/illustration/image/@path, 148, 148)}" alt="{metadata/illustration/alt-text}"/>
             </div>
-        </xsl:if>
+        </xsl:if> -->
         
         <xsl:if test="metadata/content/docbook:article and not(normalize-space(metadata/content/docbook:article/docbook:para) = '&#160;' and count(metadata/content/docbook:article/*) = 1 and not(metadata/content/docbook:article/*))">
             <xsl:apply-templates select="metadata/content/docbook:article">

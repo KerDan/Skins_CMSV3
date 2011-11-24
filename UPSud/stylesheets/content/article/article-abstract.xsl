@@ -49,9 +49,9 @@
             <br/>
             <xsl:if test="//pages/page">
                 <a href="{resolver:resolve('page', //pages/page/@id, false)}">
-                    <xsl:if test="metadata/illustration/image">
+                    <!-- <xsl:if test="metadata/illustration/image">
                         <xsl:attribute name="style">margin-left:100px;</xsl:attribute>
-                    </xsl:if>
+                    </xsl:if> -->
                     <i18n:text i18n:key="CONTENT_READ_MORE" i18n:catalogue="skin.{$skin}"/>
                 </a>            
             </xsl:if>            
