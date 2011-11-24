@@ -129,7 +129,7 @@
             </xsl:when>
           </xsl:choose>
 		 <div id="annexe_cg">
-			<zone name="zone-left-page" level="1"/>
+			<zone name="zone-left-page" level="2"/>
 		 </div>
         </td>
         <td colspan="2">
