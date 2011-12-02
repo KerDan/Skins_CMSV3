@@ -33,7 +33,7 @@ h1.title {
 .mceContentBody h1, .content h3 {
 	font-family: "Trebuchet MS", Verdana, sans-serif;
 	font-weight: bold; 
-	font-size: 1.273em; 
+	font-size: 1.12em; 
 	color: #007dbd;
 	padding-top: 1em;
 	margin: 0;
@@ -64,12 +64,9 @@ h1.title {
 /*		Styles de paragraphes		*/
 /************************************/
 .mceContentBody p, .content p {
-	font-family: Verdana, sans-serif;
+	font-family: arial, Verdana, sans-serif;
 	font-size: 12px;
-	line-height: 15px;
 	color: #333;
-	font-weight: normal;
-	padding-left: 15px;
 	padding-right: 15px;
 }
 
