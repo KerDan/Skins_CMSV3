@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+   Copyright 2010 Anyware Services
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!-- FIXME I18N -->
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Accueil</title>
+		
+		<style type="text/css">
+			body {
+				font-family: "Arial",sans-serif !important;
+				font-size: 12px;
+			}
+			
+			h1 {
+				color: #852A70;
+			}
+			
+			a {
+				color: #023A69;
+			}
+		</style>
+	</head>
+	<body>
+        <div class="frame">
+            <h2>Version BETA</h2>
+            <p>Cette version est une version BETA.</p>
+            <ul>
+                <li>Elle est en cours de développements.</li>
+                <li>La phase finale de tests n'a pas été réalisée.</li>
+                <li>Elle n'est pas destinée à être utilisée en production.</li>
+                <li>Il n'est pas conseillé de s'en servir pour effectuer des
+                    saisies de données en vue de leur conservation.</li>
+                <li>
+                    Elle fonctionne avec
+                    <strong>Firefox 3+</strong>
+                    et
+                    <strong>Internet Explorer 7+</strong>
+                    .
+                </li>
+            </ul>
+            <h2>Communauté</h2>
+            <p>Ametys est un logiciel OpenSource, n'hésitez pas à suivre
+                l'avancement du projet et à faire part de vos remarques sur :</p>
+            <ul>
+                <li>
+                    <a target="_blank" href="http://www.ametys.org/forum">Le forum Ametys (en français)</a>
+                </li>
+                <li>
+                    <a target="_blank" href="http://wiki.ametys.org/">Wiki Ametys (en anglais)</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://issues.ametys.org/browse/CMS">L'outil de suivi d'anomalie ou de
+                        demandes d'amélioration (en anglais)</a>
+                </li>
+            </ul>
+            <p>
+                Retrouvez toutes ces informations ainsi que d'autres sur
+                <a target="_blank" href="http://www.ametys.org">www.ametys.org</a>
+                .
+            </p>
+        </div>
+        
+        <div class="print">
+            <a href="javascript:window.print()" title="Imprimer">
+                <img src="{$contextPath}/plugins/help/resources/img/print.gif"
+                    alt="Imprimer" />
+            </a>
+        </div>
+        <h1>Bienvenue sur le CMS Ametys 3.2</h1>
+        <p>
+            Vous êtes dans l'espace de contribution du site
+            <b>
+                <xsl:value-of select="$siteUrl" />
+            </b>
+            utilisant la charte
+            <b>
+                <xsl:value-of select="$skin" />
+            </b>
+            .
+            <br />
+            <br />
+            Utilisez l'outil
+            <b>
+                <i>Plan du site</i>
+            </b>
+            à gauche pour commencer à créer des pages ou les modifier.
+            <br />
+            Double-cliquez sur une page pour l'ouvrir.
+        </p>
+
+        <h1>Besoin d'aide sur une fonction ?</h1>
+        <p>Renseignez les mots clés correspondant à la fonction sur laquelle
+            vous souhaitez de l'aide:</p>
+        <form id="quick-search" method="get" target="_blank"
+            action="https://wiki.ametys.org/dosearchsite.action">
+            <fieldset>
+                <input type="text" size="30" name="queryString"
+                    autocomplete="off" accesskey="q" id="queryString" />
+                &#160;
+                <input type="submit" value="Rechercher" id="quick-search-submit" />
+                <input type="hidden" value="AMETYSV3FR" id="where" name="where" />
+                <input type="hidden" value="page" id="type" name="type" />
+            </fieldset>
+        </form>            
+	</body>
+</html>
