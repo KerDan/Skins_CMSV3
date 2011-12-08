@@ -125,9 +125,9 @@
                 <!-- Bloc Université -->
     			<h2 class="R1">L'Université</h2>
     			<ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/bloc-university/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_UNIVERSITY]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
     			</ul>
@@ -136,9 +136,9 @@
                 <!-- Bloc Formations -->
                 <h2 class="R1">Formations</h2>
                 <ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/bloc-education/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_EDUCATION]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
                 </ul>
@@ -147,9 +147,9 @@
                 <!-- Bloc Recherche -->
                 <h2 class="R1">Recherche</h2>
                 <ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/bloc-research/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_RESEARCH]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
                 </ul>
@@ -163,9 +163,9 @@
                 <!-- Bloc Université -->
                 <h2 class="R1">The University</h2>
                 <ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/bloc-university/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_UNIVERSITY]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
                 </ul>
@@ -174,9 +174,9 @@
                 <!-- Bloc Research -->
                 <h2 class="R1">Research</h2>
                 <ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/bloc-research/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_RESEARCH]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
                 </ul>
@@ -185,9 +185,9 @@
                 <!-- Bloc Education -->
                 <h2 class="R1">Education</h2>
                 <ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/bloc-education/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_EDUCATION]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
                 </ul>
@@ -293,9 +293,9 @@
                 <!-- Bloc Accès direct -->
                 <xsl:if test="$lang='fr'"><h2>Accès direct</h2></xsl:if>
                 <ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/acces-directs/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_ACCES_DIRECTS]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
                 </ul> 		
@@ -309,9 +309,9 @@
                 <!-- Bloc Profil -->
                 <xsl:if test="$lang='fr'"><h2>Vous êtes...</h2></xsl:if>
                 <ul>
-                    <xsl:for-each select="/cms/inputData/PageModel/profil/page">
+                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_PROFIL]">
                         <li>
-                            <a href="{$cms-context}/{$lang}/{@path}.html" title="{$sitemap-goto-page} {@title}"><xsl:value-of select="@title" /></a>
+                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
                         </li>
                     </xsl:for-each>            
                 </ul>
