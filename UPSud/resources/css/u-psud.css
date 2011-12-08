@@ -57,7 +57,7 @@ a.top_navigation:hover {
 
 /* style de la rubrique courante dans la barre de navigation */
 .top_navigation_on  { 
-	font-size: 10px;
+	font-size: 11px;
 	color: #000000;
 	FONT-WEIGHT: normal;
 	text-align: center;
