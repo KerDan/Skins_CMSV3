@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Copyright 2010 Anyware Services
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   -->
+<!--
+	Fichier obligatoire, ne pas effacer 
+	Définition des styles dans l'éditeur : boutons et content
+	cf https://wiki.ametys.org/display/AMETYSV3/Inline+editor+styles
+	
+	ajouts et modifications des styles
+		paragraphes : h4;  
+-->
+<styles>
+	<para>
+		<import>
+			<button>css/backoffice-buttons.css</button>
+			<inline-editor>css/content.css</inline-editor>
+			<inline-editor>css/newsletter.css</inline-editor>
+		</import>
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_TITLE1_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_TITLE1_DESCRIPTION</description>
+				<cssclass>htmleditor-h1</cssclass>
+			</button>
+			<inline-editor>h1</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_TITLE2_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_TITLE2_DESCRIPTION</description>
+				<cssclass>htmleditor-h2</cssclass>
+			</button>
+			<inline-editor>h2</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_TITLE3_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_TITLE3_DESCRIPTION</description>
+				<cssclass>htmleditor-h3</cssclass>
+			</button>
+			<inline-editor>h3</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label>Titre 4</label>
+				<description>Utilisé pour les titres de niveaux inférieurs</description>
+				<cssclass>htmleditor-h4</cssclass>
+			</button>
+			<inline-editor>h4</inline-editor>
+		</style>
+	<!-- <style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_DESCRIPTION</description>
+				<cssclass>htmleditor-p-sub-title</cssclass>
+			</button>
+			<inline-editor>p.sub-title</inline-editor>
+	</style> -->
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_DESCRIPTION</description>
+				<cssclass>htmleditor-p-introduction</cssclass>
+			</button>
+			<inline-editor>p.introduction</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_NORMAL_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_NORMAL_DESCRIPTION</description>
+				<cssclass>htmleditor-p</cssclass>
+			</button>
+			<inline-editor>p</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_DESCRIPTION</description>
+				<cssclass>htmleditor-p-narrow-spaced</cssclass>
+			</button>
+			<inline-editor>p.narrow-spaced</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_IMPORTANT_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_IMPORTANT_DESCRIPTION</description>
+				<cssclass>htmleditor-p-important</cssclass>
+			</button>
+			<inline-editor>p.important</inline-editor>
+		</style>
+		<style>
+			<button>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_LABEL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_DESCRIPTION</description>
+				<cssclass>htmleditor-p-secondary</cssclass>
+			</button>
+			<inline-editor>p.secondary</inline-editor>
+		</style>
+	</para>
+	
+	<table>
+		<import>
+			<button>css/backoffice-buttons.css</button>
+			<inline-editor>css/content.css</inline-editor>
+		</import>
+		<style>
+			<button>
+				<icon>img/bo/Table_Data_Light_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_TABLE_DATALIGHT</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_TABLE_DATALIGHT_DESC</description>
+			</button>
+			<inline-editor>datalight</inline-editor>
+		</style>
+		<style>
+			<button>
+				<icon>img/bo/Table_Data_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_TABLE_DATA</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_TABLE_DATA_DESC</description>
+			</button>
+			<inline-editor>data</inline-editor>
+		</style>
+		<style>
+			<button>
+				<icon>img/bo/Table_Data_Strong_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_TABLE_DATASTRONG</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_TABLE_DATASTRONG_DESC</description>
+			</button>
+			<inline-editor>datastrong</inline-editor>
+		</style>
+	</table>
+	
+	<link>
+		<import>
+			<button>css/backoffice-buttons.css</button>
+			<inline-editor>css/content.css</inline-editor>
+		</import>
+		<style>
+			<button>
+				<icon>img/bo/Link_Download_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_LINK_DOWNLOAD</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_LINK_DOWNLOAD_DESC</description>
+			</button>
+			<inline-editor>download</inline-editor>
+		</style>
+		<style>
+			<button>
+				<icon>img/bo/Link_KnowMore_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_LINK_KNOWMORE</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_LINK_KNOWMORE_DESC</description>
+			</button>
+			<inline-editor>know-more</inline-editor>
+		</style>
+		<style>
+			<button>
+				<icon>img/bo/Link_External_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_LINK_EXTERNAL</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_LINK_EXTERNAL_DESC</description>
+			</button>
+			<inline-editor>external</inline-editor>
+		</style>
+	</link>
+	
+	<image>
+		<import>
+			<button>css/backoffice-buttons.css</button>
+			<inline-editor>css/content.css</inline-editor>
+		</import>
+		<style>
+			<button>
+				<icon>img/bo/Image_Frame_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_IMAGE_FRAME</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_IMAGE_FRAME_DESC</description>
+			</button>
+			<inline-editor>frame</inline-editor>
+		</style>
+		<style>
+			<button>
+				<icon>img/bo/Image_LargeFrame_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_IMAGE_LARGEFRAME</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_IMAGE_LARGEFRAME_DESC</description>
+			</button>
+			<inline-editor>largeframe</inline-editor>
+		</style>
+	</image>
+	
+	<unorderedlist>
+		<import>
+			<button>css/backoffice-buttons.css</button>
+			<inline-editor>css/content.css</inline-editor>
+		</import>
+		<style>
+			<button>
+				<icon>img/bo/UnorderedList_Arrow_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_ARROW</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_ARROW_DESC</description>
+			</button>
+			<inline-editor>arrow</inline-editor>
+		</style>
+		<style>
+			<button>
+				<icon>img/bo/UnorderedList_Check_32.png</icon>
+				<label i18n="true">SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_CHECK</label>
+				<description i18n="true">SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_CHECK_DESC</description>
+			</button>
+			<inline-editor>check</inline-editor>
+		</style>
+	</unorderedlist>
+	
+	<orderedlist>
+		<import>
+			<button>css/backoffice-buttons.css</button>
+			<inline-editor>css/content.css</inline-editor>
+		</import>
+	</orderedlist>
+</styles>
