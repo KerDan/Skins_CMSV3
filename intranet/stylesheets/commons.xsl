@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- template commun à tous les gabarit du skin UPSud v3 -->
-<!-- Daniel Kerboeuf, novembre 2011 -->
+<!-- template commun aux gabarits du skin intranet -->
+<!-- Daniel Kerboeuf, décembre 2011 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
 							xmlns:i18n="http://apache.org/cocoon/i18n/2.1" 
 							xmlns:xalan="http://xml.apache.org/xalan"
@@ -33,24 +33,15 @@
                 <link rel="apple-touch-icon" href="{$skincontext}/ico/apple-touch-icon.png" />
 			</head>
 			
-			<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-				<table width="895" border="0" cellspacing="0" cellpadding="0" align="center"> <!--  container principal -->
-					<tr> <!--  header -->
-						<td>
-							<xsl:call-template name="header"/>
-						</td>
-					</tr>
-					<tr> <!--  middle -->
-						<td>
-							<xsl:call-template name="middle"/>
-						</td>
-					</tr>
-					<tr> <!-- footer -->
-						<td>
-							<xsl:call-template name="footer"/>
-						</td>
-					</tr>
-				</table>
+			<body>
+				<div class="container">
+					<xsl:call-template name="header"/>
+					<xsl:call-template name="navbar"/>
+					<xsl:call-template name="breadcrumb"/>
+					<xsl:call-template name="content"/>
+					<xsl:call-template name="rightcol"/>
+					<xsl:call-template name="footer"/>
+				</div>
 				<xsl:if test="$back-office = 'front'">
 					<xsl:call-template name="google"/>
 				</xsl:if>
@@ -70,7 +61,7 @@
 					<xsl:when test="/cms/page/pageContents/zone[@name = 'default']/zoneItem/html/head/meta[@name = 'DC.description']">
 						<xsl:value-of select="/cms/page/pageContents/zone/zoneItem/html/head/meta[@name = 'DC.description']/@content" />
 					</xsl:when>
-					<xsl:otherwise><xsl:text>Bienvenue sur le site de l'Université Paris-Sud, première université en terme de distinctions, plus grand campus de France!</xsl:text></xsl:otherwise>
+					<xsl:otherwise><xsl:text>Intranet de l'Université Paris-Sud</xsl:text></xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
 		</meta>
@@ -96,7 +87,7 @@
 	<!--  **			Common CSS					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="common-css">
-		<link type="text/css" href="{$skincontext}/css/u-psud.css" rel="stylesheet"/>
+		<link type="text/css" href="{$skincontext}/css/intranet.css" rel="stylesheet"/>
 		<link type="text/css" href="{$skincontext}/css/custom-services-contents.css" rel="stylesheet"/>
 		<link type="text/css" href="{$skincontext}/css/print.css" rel="stylesheet" media="print" />
 	</xsl:template>
@@ -106,56 +97,63 @@
 	<!--  **				header					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="header">
-		<table border="0" cellspacing="0" cellpadding="0" width="100%">
-			<tr>
-				<td rowspan="3" height="120" width="136">
-					<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_psud.png" width="136" height="120" alt="logo" border="0"/></a>
-				</td>
-				<td valign="top" align="right">
-					<xsl:call-template name="top-toolbar"/>
-				</td>
-			</tr>
-			<tr>
-				<td valign="top" align="right">
-					<xsl:call-template name="navigation-top"/>
-				</td>
-			</tr>
-			<tr>
-				<td valign="top" align="right">
-					<table height="37" border="0" cellpadding="0" cellspacing="0">
-						<tr>
-							<td width="30"><a href="{$cms-context}/fr/index.html"><img src="{$skincontext}/img/top_fr.gif" width="24" border="0" height="37"/></a></td><!-- version francaise -->
-							<td width="30"><a href="{$cms-context}/en/index.html"><img src="{$skincontext}/img/top_en.gif" width="24" border="0" height="37"/></a></td><!-- version anglaise -->
-							<td width="30"><img src="{$skincontext}/img/pixel.gif" width="24" height="37"/></td><!-- autre version ... -->
-						</tr>
-					</table>
-				</td>
-			</tr>
-		</table>
+		<div class="header">
+			<h1>header</h1>
+		</div>
 	</xsl:template>
- 		
+ 
+ 	<!--  ********************************************	-->
+	<!--  **				navbar					**	-->
+	<!--  ********************************************	-->
+	<xsl:template name="navbar">
+		<div class="navbar">
+			<ul><li>xxx</li><li>xxx</li><li>xxx</li><li>xxx</li></ul>
+		</div>
+	</xsl:template>
+	
+	<!--  ********************************************	-->
+	<!--  **				breadcrumb					**	-->
+	<!--  ********************************************	-->
+	<xsl:template name="breadcrumb">
+		<div class="breadcrumb">
+			<p>home > fgsdfg > dghgh</p>
+		</div>
+	</xsl:template>
+
+	<!--  ********************************************	-->
+	<!--  **				content					**	-->
+	<!--  ********************************************	-->
+	<xsl:template name="content">
+		<div class="content">
+			<h2>Titre du contenu</h2>
+			<p>dfgsdfg dfgsdfg sdfgsdfg sdfgdfg dfg fg dfh </p>
+			<p>dfgfg vgh dvgn vgn dvndvgn cvbn cvbn vbn vgb f</p>
+		</div>
+	</xsl:template>
+
+	<!--  ********************************************	-->
+	<!--  **				rightcol				**	-->
+	<!--  ********************************************	-->
+	<xsl:template name="rightcol">
+		<div class="rightcol">
+			<h2>menu</h2>
+			<ul><li>xxx</li><li>xxx</li><li>xxx</li><li>xxx</li></ul>
+			<h2>bloc</h2>
+			<p>dfgfg vgh dvgn vgn dvndvgn cvbn cvbn vbn vgb f</p>
+		</div>
+	</xsl:template>
+
+	<!--  ********************************************	-->
+	<!--  **				footer					**	-->
+	<!--  ********************************************	-->
+	<xsl:template name="footer">
+		<div class="footer">
+			<p>sdfg sdfg dfg dfgh h</p>
+		</div>
+	</xsl:template>
+
+
 	<!-- ****************************************************************** -->
-	<xsl:template name="navigation-top">
-		<table height="32" border="0" cellpadding="0" cellspacing="0" width="100%">
-			<tr>
-				<td width="5">
-					<img src="{$skincontext}/img/top_navigation_borderleft.png" width="10" height="32" />
-				</td>
-				<td background="{$skincontext}/img/top_navigation_bkg.png" class="top_navigation">
-					<xsl:for-each select="/cms/inputData/sitemap/page[@PLUGIN_TAGS_RUBRIQUE]">
-						<a href="{$cms-context}/{$lang}/{@sitemap:path}.html">
-							<xsl:attribute name="class">top_navigation<xsl:if test="@sitemap:current = 'true'">_on</xsl:if></xsl:attribute>
-							<xsl:value-of select="@sitemap:title"/>
-						</a>
-						<xsl:if test="not(position() = last())">&#160;&#160;|&#160;&#160;</xsl:if>
-					</xsl:for-each>
-				</td>
-				<td width="6">
-					<img src="{$skincontext}/img/top_navigation_borderright.png" width="10" height="32" />
-				</td>
-			</tr>
-		</table>
-	</xsl:template>
 
 	<!--  ********************************************	-->
 	<!--  **		moteur de recherche				**	-->
@@ -192,34 +190,4 @@
         </script>
 	</xsl:template>
 
-
-	<!-- ****************************************************************** -->
-	<!-- 						INTRANET 									-->
-	<!-- ****************************************************************** -->
-	<!-- Lien vers l'Intranet accessible sur toutes les pages -->
-		<xsl:variable name="lien_intranet">#intranet</xsl:variable>
-		
-	<!-- ****************************************************************** -->
-	<!-- 						LIENS EN BAS DE PAGE						-->
-	<!-- ****************************************************************** -->
-	<!-- Lien vers le plan du site -->
-		<xsl:variable name="url_sitemap">sitemap.html</xsl:variable>
-	<!-- Lien vers le page d'acces -->
-		<xsl:variable name="url_access">access.html</xsl:variable>
-	<!-- Lien vers le page des informations légales -->
-		<xsl:variable name="url_info_legales">info_legales.html</xsl:variable>
-	<!-- EMail du webmaster -->
-		<xsl:variable name="webmaster">webmaster@u-psud.fr</xsl:variable>
-	
-	<!-- *********************************************************************************************** -->
-	<!-- 						Phrases explicatives d'introduction des composantes					     -->
-	<!-- *********************************************************************************************** -->
-		<xsl:variable name="compo_presentation">Phrase explicative de présentation à personnaliser dans le fichier custom.xsl</xsl:variable>
-		<xsl:variable name="compo_search">Phrase explicative d'introduction de la recherche à personnaliser dans le fichier custom.xsl</xsl:variable>
-		<xsl:variable name="compo_formation">Phrase explicative d'introduction des formations à personnaliser dans le fichier custom.xsl</xsl:variable>
-
-	<!-- *********************************************************************************************** -->
-	<!-- 						Barre de navigation (nombre de rubriques à afficher)				      -->
-	<!-- *********************************************************************************************** -->
-		<xsl:variable name="navbar_max">6</xsl:variable>
 </xsl:stylesheet>
