@@ -120,28 +120,6 @@
 		</div>
 	</xsl:template>
 
-	<!--  ********************************************	-->
-	<!--  **				content					**	-->
-	<!--  ********************************************	-->
-	<xsl:template name="content">
-		<div class="grid_8">
-			<h2>Titre du contenu</h2>
-			<p>dfgsdfg dfgsdfg sdfgsdfg sdfgdfg dfg fg dfh </p>
-			<p>dfgfg vgh dvgn vgn dvndvgn cvbn cvbn vbn vgb f</p>
-		</div>
-	</xsl:template>
-
-	<!--  ********************************************	-->
-	<!--  **				rightcol				**	-->
-	<!--  ********************************************	-->
-	<xsl:template name="rightcol">
-		<div class="grid_4">
-			<h2>menu</h2>
-			<ul><li>xxx</li><li>xxx</li><li>xxx</li><li>xxx</li></ul>
-			<h2>bloc</h2>
-			<p>dfgfg vgh dvgn vgn dvndvgn cvbn cvbn vbn vgb f</p>
-		</div>
-	</xsl:template>
 
 	<!--  ********************************************	-->
 	<!--  **				footer					**	-->

@@ -27,14 +27,6 @@
 			<label i18n="true">SKIN_BO_ZONING_INDEX_MAIN_LABEL</label>
 			<description i18n="true">SKIN_BO_ZONING_INDEX_MAIN_DESCRIPTION</description>		
 		</zone>			
-        <zone id="zone-right-home">
-            <label>Zone annexe colone de droite</label>
-            <description>Zone optionnelle pour insérer des contenus annexe sur la page d'accueil (partenaires, événements, pub...)</description>        
-        </zone>
-        <zone id="zone-left-home">
-            <label>Zone annexe colone de gauche</label>
-            <description>Zone optionnelle pour insérer des contenus annexe sur la page d'accueil (partenaires, événements, pub...)</description>        
-        </zone>
 	</zones>	
 	
 </template>
