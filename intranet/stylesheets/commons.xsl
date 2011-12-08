@@ -34,7 +34,7 @@
 			</head>
 			
 			<body>
-				<div class="container">
+				<div id="container" class="container_12">
 					<xsl:call-template name="header"/>
 					<xsl:call-template name="navbar"/>
 					<xsl:call-template name="breadcrumb"/>
@@ -97,7 +97,7 @@
 	<!--  **				header					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="header">
-		<div class="header">
+		<div id="header" class="grid_12">
 			<h1>header</h1>
 		</div>
 	</xsl:template>
@@ -106,7 +106,7 @@
 	<!--  **				navbar					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="navbar">
-		<div class="navbar">
+		<div id="navbar" class="grid_12">
 			<ul><li>xxx</li><li>xxx</li><li>xxx</li><li>xxx</li></ul>
 		</div>
 	</xsl:template>
@@ -115,7 +115,7 @@
 	<!--  **				breadcrumb					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="breadcrumb">
-		<div class="breadcrumb">
+		<div id="breadcrumb" class="grid_12">
 			<p>home > fgsdfg > dghgh</p>
 		</div>
 	</xsl:template>
@@ -124,7 +124,7 @@
 	<!--  **				content					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="content">
-		<div class="content">
+		<div class="grid_8">
 			<h2>Titre du contenu</h2>
 			<p>dfgsdfg dfgsdfg sdfgsdfg sdfgdfg dfg fg dfh </p>
 			<p>dfgfg vgh dvgn vgn dvndvgn cvbn cvbn vbn vgb f</p>
@@ -135,7 +135,7 @@
 	<!--  **				rightcol				**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="rightcol">
-		<div class="rightcol">
+		<div class="grid_4">
 			<h2>menu</h2>
 			<ul><li>xxx</li><li>xxx</li><li>xxx</li><li>xxx</li></ul>
 			<h2>bloc</h2>
@@ -147,7 +147,7 @@
 	<!--  **				footer					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="footer">
-		<div class="footer">
+		<div id="footer" class="grid_12">
 			<p>sdfg sdfg dfg dfgh h</p>
 		</div>
 	</xsl:template>
