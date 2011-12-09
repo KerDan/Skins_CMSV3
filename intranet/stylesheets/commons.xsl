@@ -98,8 +98,9 @@
 	<!--  ********************************************	-->
 	<xsl:template name="header">
 		<div id="header" class="grid_12">
-			<h1>header</h1>
+			<h1 class="hidden">Intranet Université Paris-Sud</h1>
 		</div>
+		<div class="clear"></div>
 	</xsl:template>
  
  	<!--  ********************************************	-->
@@ -107,8 +108,18 @@
 	<!--  ********************************************	-->
 	<xsl:template name="navbar">
 		<div id="navbar" class="grid_12">
-			<ul><li>xxx</li><li>xxx</li><li>xxx</li><li>xxx</li></ul>
+			<ul class="nav">
+				<li>Accueil</li>&#160;&#160;|&#160;&#160;
+				<xsl:for-each select="/cms/inputData/sitemap/page[@PLUGIN_TAGS_RUBRIQUE]">
+					<a href="{$cms-context}/{$lang}/{@sitemap:path}.html">
+						<xsl:attribute name="class">top_navigation<xsl:if test="@sitemap:current = 'true'">_on</xsl:if></xsl:attribute>
+						<xsl:value-of select="@sitemap:title"/>
+					</a>
+					<xsl:if test="not(position() = last())">&#160;&#160;|&#160;&#160;</xsl:if>
+				</xsl:for-each>
+			</ul>
 		</div>
+		<div class="clear"></div>
 	</xsl:template>
 	
 	<!--  ********************************************	-->
@@ -118,6 +129,7 @@
 		<div id="breadcrumb" class="grid_12">
 			<p>home > fgsdfg > dghgh</p>
 		</div>
+		<div class="clear"></div>
 	</xsl:template>
 
 
@@ -128,6 +140,7 @@
 		<div id="footer" class="grid_12">
 			<p>sdfg sdfg dfg dfgh h</p>
 		</div>
+		<div class="clear"></div>
 	</xsl:template>
 
 

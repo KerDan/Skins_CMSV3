@@ -4,9 +4,24 @@
    Daniel Kerboeuf, décembre 2011
    ========================================================================== */
 
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html {
+	height: 100%;
+	font-size: 100%;
+    background-attachment: fixed;
+    background-color: #8ab712;
+    background-image: url("../img/page_bkg_green.png");
+    background-position: left top;
+    background-repeat: repeat-x;
+	overflow-y: scroll;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
 
-body { margin: 0; font-size: 13px; line-height: 1.231; }
+body {
+	margin: 0;
+	font-size: 13px;
+	line-height: 1.231;
+}
 
 body, button, input, select, textarea { font-family: sans-serif; color: #222; }
 
@@ -191,7 +206,6 @@ td { vertical-align: top; }
 	margin-right: 1%;
 }
 
-
 .container_12 .grid_4 {
 	width: 31.333%;
 }
@@ -204,7 +218,66 @@ td { vertical-align: top; }
 	width: 98%;
 }
 
+#container {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#header {
+}
+#navbar {
+		width: 100%;
+		margin:0; padding:0;
+}
+ul.nav {
+    background: none repeat scroll 0 0 #666666;
+    height: 2.5em;
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+ul.nav li {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: none repeat scroll 0 0 #CCCCCC !important;
+    cursor: pointer;
+    float: left;
+    font-weight: normal;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+ul.nav li a {
+    background: none repeat scroll 0 0 #666666;
+    border: 0 none;
+    color: #FFFFFF;
+    height: 2.5em;
+    line-height: 2.5em;
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 2.4em;
+    line-height: 2.5em;
+    padding: 0 1em;
+    text-decoration: none;
+}
 
+html body * span.clear, html body * div.clear, html body * li.clear, html body * dd.clear {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    height: 0;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    visibility: hidden;
+    width: 0;
+}
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */
