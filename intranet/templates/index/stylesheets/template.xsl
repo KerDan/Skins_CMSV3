@@ -19,7 +19,7 @@
 	<!--  **				content					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="content">
-		<div class="grid_12">
+		<div class="grid_12" id="content">
 			<zone name="default" level="2"/>
 		</div>
 	</xsl:template>

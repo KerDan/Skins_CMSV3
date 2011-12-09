@@ -109,16 +109,21 @@
 	<!--  **				navbar					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="navbar">
-		<div id="navbar" class="grid_12">
+		<div id="navbar" class="grid_12 nav">
 			<ul class="nav">
-				<li>Accueil</li>&#160;&#160;|&#160;&#160;
+				<li>
+					<a href="{$cms-context}/fr/index.html"><img src="{$skincontext}/img/home_icon.png" width="16px" height="16px" alt="accueil" /></a>&#160;|&#160;
+				</li>
 				<xsl:for-each select="/cms/inputData/sitemap/page[@PLUGIN_TAGS_RUBRIQUE]">
-					<a href="{$cms-context}/{$lang}/{@sitemap:path}.html">
-						<xsl:attribute name="class">top_navigation<xsl:if test="@sitemap:current = 'true'">_on</xsl:if></xsl:attribute>
-						<xsl:value-of select="@sitemap:title"/>
-					</a>
-					<xsl:if test="not(position() = last())">&#160;&#160;|&#160;&#160;</xsl:if>
+					<li>
+						<a href="{$cms-context}/{$lang}/{@sitemap:path}.html">
+							<xsl:attribute name="class">top_navigation<xsl:if test="@sitemap:current = 'true'">_on</xsl:if></xsl:attribute>
+							<xsl:value-of select="@sitemap:title"/>
+						</a>
+						<xsl:if test="not(position() = last())">&#160;|&#160;</xsl:if>
+					</li>
 				</xsl:for-each>
+				<div class="clear"></div>
 			</ul>
 		</div>
 		<div class="clear"></div>
@@ -129,7 +134,17 @@
 	<!--  ********************************************	-->
 	<xsl:template name="breadcrumb">
 		<div id="breadcrumb" class="grid_12">
-			<p>home > fgsdfg > dghgh</p>
+			<ul class="nav">
+			<xsl:variable name="in_path" select="/cms/inputData/sitemap/descendant::*[@sitemap:in-path='true']"/>
+			<xsl:for-each select="$in_path[@sitemap:path != 'index']">
+				<li>
+				<xsl:choose>
+ 					<xsl:when test="@sitemap:current='true'">&#160;<xsl:value-of select="@sitemap:title"/></xsl:when>
+					<xsl:otherwise>&#160;<a href="{$cms-context}/fr/{@sitemap:path}.html" class="path"><xsl:value-of select="@sitemap:title"/></a>&#160;&gt;</xsl:otherwise>
+				</xsl:choose>
+				</li>
+    		</xsl:for-each>
+			</ul>
 		</div>
 		<div class="clear"></div>
 	</xsl:template>
@@ -139,10 +154,10 @@
 	<!--  **				footer					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="footer">
-		<div id="footer" class="grid_12">
-			<p>sdfg sdfg dfg dfgh h</p>
-		</div>
 		<div class="clear"></div>
+		<div id="footer" class="grid_12">
+			<p></p>
+		</div>
 	</xsl:template>
 
 

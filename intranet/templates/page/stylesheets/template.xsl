@@ -27,7 +27,7 @@
 	<!--  **				content					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="content">
-		<div class="grid_8">
+		<div class="grid_8" id="content">
 			<zone name="default" level="2"/>
 		</div>
 	</xsl:template>
@@ -36,7 +36,7 @@
 	<!--  **				rightcol				**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="rightcol">
-		<div class="grid_4">
+		<div class="grid_4" id="focus">
 			<zone name="focus" level="2"/>
 		</div>
 	</xsl:template>
