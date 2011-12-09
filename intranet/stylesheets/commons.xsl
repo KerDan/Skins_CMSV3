@@ -87,6 +87,8 @@
 	<!--  **			Common CSS					**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="common-css">
+		<link type="text/css" href="{$skincontext}/css/style.css" rel="stylesheet"/>
+		<link type="text/css" href="{$skincontext}/css/960_12_col.css" rel="stylesheet"/>
 		<link type="text/css" href="{$skincontext}/css/intranet.css" rel="stylesheet"/>
 		<link type="text/css" href="{$skincontext}/css/custom-services-contents.css" rel="stylesheet"/>
 		<link type="text/css" href="{$skincontext}/css/print.css" rel="stylesheet" media="print" />
