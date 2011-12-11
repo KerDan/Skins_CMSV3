@@ -70,7 +70,7 @@
 					<xsl:when test="/cms/page/pageContents/zone[@name = 'default']/zoneItem/html/head/meta[@name = 'DC.description']">
 						<xsl:value-of select="/cms/page/pageContents/zone/zoneItem/html/head/meta[@name = 'DC.description']/@content" />
 					</xsl:when>
-					<xsl:otherwise><xsl:text>Bienvenue sur le site de l'Université Paris-Sud, première université en terme de distinctions, plus grand campus de France!</xsl:text></xsl:otherwise>
+					<xsl:otherwise><xsl:text>Bienvenue sur le site de Polytech Paris-Sud, école d'ingénieur de l'Université Paris-sud</xsl:text></xsl:otherwise>
 				</xsl:choose>
 			</xsl:attribute>
 		</meta>
@@ -108,8 +108,8 @@
 	<xsl:template name="header">
 		<table border="0" cellspacing="0" cellpadding="0" width="100%">
 			<tr>
-				<td rowspan="3" height="120" width="136">
-					<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_psud.png" width="136" height="120" alt="logo" border="0"/></a>
+				<td rowspan="3" height="64" width="200">
+					<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_polytech.png" width="200" height="64" alt="logo" border="0"/></a>
 				</td>
 				<td valign="top" align="right">
 					<xsl:call-template name="top-toolbar"/>
