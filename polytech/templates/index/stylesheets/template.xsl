@@ -114,7 +114,6 @@
 						<td width="200" valign="top">
 							<xsl:call-template name="toolbar_fr"/>
 							<xsl:call-template name="profils"/>
-							<xsl:call-template name="direct"/>
 							<xsl:call-template name="composantes"/>
                                  <div id="annexe_cd" style="margin-top: 20px;">
 									<zone name="zone-right-home" level="2"/>
@@ -133,9 +132,21 @@
 
 	<xsl:template name="menu_fr">
 		<div id="menu">
-            <xsl:if test="/cms/inputData/PageModel/bloc-education/page">
+				<xsl:if test="/cms/inputData/PageModel/acces-directs/page">
+ 		               <!-- Bloc Accès direct -->
+  	           	 	   <h2 class="R1">Accès direct</h2>
+                		<ul>
+                  		  <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_ACCES_DIRECTS]">
+    	                    <li>
+                            	<a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
+                    	    </li>
+                 	      </xsl:for-each>            
+              			</ul> 		
+      			</xsl:if>        
+			
+           <xsl:if test="/cms/inputData/PageModel/bloc-education/page">
                 <!-- Bloc Formations -->
-                <h2 class="R1">Formations</h2>
+                <h2 class="R1">Les formations</h2>
                 <ul>
                     <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_EDUCATION]">
                         <li>
@@ -144,20 +155,9 @@
                     </xsl:for-each>            
                 </ul>
             </xsl:if>
-            <xsl:if test="/cms/inputData/PageModel/bloc-research/page">
-                <!-- Bloc Recherche -->
-                <h2 class="R1">Recherche</h2>
-                <ul>
-                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_RESEARCH]">
-                        <li>
-                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
-                        </li>
-                    </xsl:for-each>            
-                </ul>
-            </xsl:if>                        
             <xsl:if test="/cms/inputData/PageModel/bloc-university/page">
-                <!-- Bloc Composante -->
-    			<h2 class="R1">Nom de la composante</h2>
+                <!-- Bloc Spécialités -->
+    			<h2 class="R1">Les spécialités</h2>
     			<ul>
                     <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_BLOC_LEFT_UNIVERSITY]">
                         <li>
@@ -298,23 +298,7 @@
 		<xsl:call-template name="search"/>
 		</div>
 	</xsl:template>
-	
-	<xsl:template name="direct"> <!-- utilisation de l'ancienne boite "disciplines" pour la liste "accès direct" -->
-		<xsl:if test="/cms/inputData/PageModel/acces-directs/page">
-            <div id="direct">
-                <!-- Bloc Accès direct -->
-                <xsl:if test="$lang='fr'"><h2>Accès direct</h2></xsl:if>
-                <ul>
-                    <xsl:for-each select="/cms/inputData/sitemap//page[@PLUGIN_TAGS_ACCES_DIRECTS]">
-                        <li>
-                            <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" title="{$sitemap-goto-page} {@sitemap:title}"><xsl:value-of select="@sitemap:title" /></a>
-                        </li>
-                    </xsl:for-each>            
-                </ul> 		
-		  </div>
-        </xsl:if>        
-	</xsl:template>
-	
+		
 	<xsl:template name="profils">
         <xsl:if test="/cms/inputData/PageModel/profil/page">		
             <div id="profils">

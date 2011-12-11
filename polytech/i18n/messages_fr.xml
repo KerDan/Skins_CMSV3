@@ -137,8 +137,8 @@
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_TOPLINKSCONTACT_DESCRIPTION">Pour gérer le lien d'accès direct en haut à droite sur la page de contact</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_TOPLINKSMAP_LABEL">Lien Plans d'accès en haut à droite</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_TOPLINKSMAP_DESCRIPTION">Pour gérer le lien d'accès direct en haut à droite sur la page des plans d'accès</message>
-    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_UNIVERSITY_LABEL">Bloc composante</message>
-    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_UNIVERSITY_DESCRIPTION">Pour gérer les liens du bloc "composante"" à gauche</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_UNIVERSITY_LABEL">Bloc spécialités</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_UNIVERSITY_DESCRIPTION">Pour gérer les liens du bloc "spécialités" à gauche</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_EDUCATION_LABEL">Bloc Formations</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_EDUCATION_DESCRIPTION">Pour gérer les liens du bloc bleu "Formations" à gauche</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_RESEARCH_LABEL">Bloc Recherche</message>
@@ -146,7 +146,7 @@
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_PROFIL_LABEL">Accès par profils "Vous êtes"</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_PROFIL_DESCRIPTION">Pour gérer les liens du bloc vert "Vous êtes" à droite</message>        
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_DIRECTACCESS_LABEL">Accès directs</message>
-    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_DIRECTACCESS_DESCRIPTION">Pour gérer les liens du bloc violet "Accès direct" à droite</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_DIRECTACCESS_DESCRIPTION">Pour gérer les liens du bloc violet Accès direct</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_COMPOSANTE_LABEL">Accès par Composantes</message>
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_COMPOSANTE_DESCRIPTION">Pour gérer les liens du bloc marron "Composantes" à droite</message>        
     <message key="SKIN_BO_TAGS_CAT_HOME_TAG_STUDENTLIFE_LABEL">Lien student life (uniquement en version anglaise)</message>
