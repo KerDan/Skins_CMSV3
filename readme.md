@@ -1,5 +1,18 @@
-#  Skins pour la V3 CMS Ametys
+##Skins CMS Ametys
 
-##UPSud/
+###UPSud/
 Skin pour le site principal
-Version originale livrée par Laurence Perrier (v0.9-LP)
+
+###composantes
+Skin de base pour les composantes
+
+###intranet
+Skin pour l'intranet
+
+En cours de développement (cf branche 'intranet')
+
+###polytech
+Skin pour le site de Polytech, dérivée de composantes
+
+En cours de développement (cf branche 'polytech')
+
