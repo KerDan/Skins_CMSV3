@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   Copyright 2010 Anyware Services
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   -->
+<model lang="fr">  
+	<div id="newsletter-content">
+		<div class="center">
+			<div class="edito">
+				<h1>Edito</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					Aenean pharetra ultrices eleifend. Suspendisse non odio justo, at elementum lorem. 
+					Etiam eu tellus et leo varius mollis. In diam sem, placerat in molestie id, laoreet id ante. 
+					Sed pretium tempus purus ut euismod. Aliquam in libero nulla, ut viverra tellus.
+				</p>
+			</div>
+			
+			<div class="articles">
+				<p>Insérez vos contenus ici</p>
+			</div>
+		</div>
+			
+		<div class="sidebar">
+			<div class="encart">
+				<h2>Zoom</h2>
+				<p>Aliquam sed ante libero. Phasellus aliquet tincidunt mauris. Praesent luctus lobortis elit, eget eleifend lacus dapibus pellentesque.</p>
+			</div>
+			
+			<div class="encart last">
+				<h2>Liens</h2>
+				<p>Donec interdum tortor ac massa commodo nec cursus metus luctus. Integer fermentum, nibh nec molestie sodales, dui justo dictum orci, pretium varius arcu velit sed eros</p>
+			</div>
+		</div>
+			
+	</div>
+</model>

@@ -1,0 +1,205 @@
+/* feuille de style commune */
+
+html {
+	font-size: 100%; /* pour IE windows , cf http://css.alsacreations.com/Tutoriels-et-articles-divers/gerer-la-taille-du-texte-avec-les-em */
+	height: 100%;
+}
+
+body  {
+	height: 100%;
+	font-family: Arial, Geneva, Arial, Helvetica, sans-serif;
+	color: #333;
+	background: #696968 url("../img/page_bkg.jpg") repeat-x;
+	margin: 0; padding: 0;
+}
+p {
+	font-size: 1em; /* -> 12px */
+	line-height: 1.5em; /* -> 18px */
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+a {
+	color: #005d9d;
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+	color: red;
+}
+img {border: 0px;}
+
+/* champ de recherche */
+.text_field  {
+	font-family: Arial, sans-serif;
+	font-size: 10px;
+	color: #000;
+	border-color: #000 #000 #000 #000;
+	border-style: solid;
+	border-width:1px;
+}
+
+/* barre de navigation - rubriques  */
+.top_navigation  { 
+	font-size: 11px;
+	color: #fff;
+	text-align: center;
+}
+a.top_navigation  {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.top_navigation:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* style de la rubrique courante dans la barre de navigation */
+.top_navigation_on  { 
+	font-size: 11px;
+	color: #000000;
+	FONT-WEIGHT: normal;
+	text-align: center;
+}
+a.top_navigation_on  {
+	color: #000000;
+	text-decoration: none;
+}
+
+
+.page_navigation 
+{
+font-family: Verdana, sans-serif;
+font-size: 10px;
+color: #255192;
+FONT-WEIGHT: normal;
+padding-top: 3px;
+padding-left: 15px;
+}
+
+.page_navigation_links 
+{
+font-family: Verdana, sans-serif;
+font-size: 10px;
+color: #255192;
+FONT-WEIGHT: normal;
+}
+a.page_navigation_links 
+{
+color: #255192;
+text-decoration: none;
+}
+a.page_navigation_links:hover
+{
+color: #1BBCF0;
+text-decoration: none;
+}
+
+a.print
+{
+font-family: Arial, Verdana,sans-serif;
+font-size: 10px;
+color: #007DBD;
+font-weight: bold;
+text-decoration: none;
+}
+a.print:hover
+{
+color: #255192;
+text-decoration: none;
+}
+
+.path 
+{
+FONT-WEIGHT: normal; 
+FONT-SIZE: 10px; 
+COLOR: #333;
+FONT-FAMILY: Arial, sans-serif;
+}
+a.path 
+{
+COLOR: #339;
+TEXT-DECORATION: none
+}
+a.path:hover 
+{
+COLOR: #1BBCF0; 
+TEXT-DECORATION: none;
+}
+
+.path_on 
+{
+FONT-WEIGHT: normal;
+FONT-SIZE: 10px;
+COLOR: #007DBD; 
+FONT-FAMILY: Arial, sans-serif;
+text-align:right;
+padding-right: 10px;
+}
+
+
+.top 
+{
+FONT-WEIGHT: normal; 
+FONT-SIZE: 10px; 
+COLOR: #007DBD; 
+FONT-FAMILY: Verdana, sans-serif;
+}
+a.top
+{
+COLOR: #007DBD; 
+TEXT-DECORATION: none
+}
+a.top:hover 
+{
+COLOR: #1BBCF0;
+TEXT-DECORATION: none;
+}
+
+
+
+/* menu de la colone de gauche  */
+
+#menu { 
+padding: 0;
+
+margin: 20px 20px 10px 10px;
+width: 180px;
+}
+
+#menu h2   {
+	font-family: "Trebuchet MS";
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	background: #005992;
+	margin: 0;
+	padding: 0 0 0 9px;
+	background-image: url("../img/menu_R1.gif"); background-repeat: no-repeat; background-position: right top;
+}
+#menu ul {
+ 	list-style: none;
+ 	padding: 0; margin: 0;
+}
+#menu ul li  {
+	color: #000;
+	line-height: 1.5em;
+	border-bottom: 2px solid white;
+}
+
+#menu ul li a   {
+	background: #f7f7fe url("../img/bullet_blue.png") no-repeat left center;
+	text-align: left;
+	padding-left: 20px;
+	display: block;
+}
+#menu ul ul  a {
+	background: #fff;
+}
+
+#menu ul li a:hover,
+#menu ul li a:focus,
+#menu ul li a:active  { background: #fefefe url("../img/bullet_orange.png") no-repeat left center }
+
+#menu ul li a.flag  { background: #fefefe url("../img/flag_blue.png") no-repeat left center }

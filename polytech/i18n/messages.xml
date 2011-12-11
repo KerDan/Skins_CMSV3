@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Copyright 2010 Anyware Services
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   -->
+<catalogue xml:lang="en">    
+
+	<message key="JAVASCRIPT_DEACTIVATED" >Vous avez déconnecté votre javascript /css. Malgré ceci le contenu reste accessible, seules des fonctionnalités d'affichage sont indisponibles.</message>
+	<message key="CMS_DISABLED_SEARCH">Vous ne pouvez pas utiliser la recherche sur le CMS. Utilisez le bouton rechercher sur l'espace contributeur à la place</message>
+	
+    <message key="intro_disciplines">D&#233;couvrez l'ensemble des disciplines<br/>pr&#233;sentes sur nos campus</message>
+    
+    <message key="sitemap">plan du site</message>
+    <message key="access">accès</message>
+    <message key="info_legales">informations légales</message>
+    <message key="copyright">Copyright &#169; Universit&#233; Paris-Sud 11 2006 - Tous droits r&#233;serv&#233;s - </message>
+    <message key="print">Imprimer la page</message>
+    
+    <message key="SKIN_ERROR_404_TITLE">Page non trouvée</message>
+    <message key="SKIN_ERROR_401_TITLE">Accès refusé</message>
+    <message key="SKIN_ERROR_401_TEXT">Vous n'êtes pas autorisé à accéder au site.</message>
+    <message key="SKIN_ERROR_404_TEXT">L'adresse que vous avez demandée n'existe pas.</message>
+    <message key="SKIN_ERROR_404_TEXT2">Si vous avez saisi l'adresse directement dans le navigateur, vérifiez qu'elle est correcte, sinon merci de signaler l'erreur au webmaster.</message>
+    <message key="SKIN_ERROR_404_HOME_LINK">Cliquer</message>
+    <message key="SKIN_ERROR_404_HOME_LINK2">ici</message>
+    <message key="SKIN_ERROR_404_HOME_LINK3">pour revenir à la page d'accueil</message>
+    <message key="SKIN_ERROR_500_TITLE">Une erreur est survenue</message>
+    <message key="SKIN_ERROR_500_TEXT">La page n'existe pas ou la fonctionnalité demandée a rencontré un problème.</message>
+    <message key="SKIN_ERROR_500_ERROR_MESSAGE">Message interne</message>    
+    
+    <!-- +
+         | CONTENT
+         + -->    
+    
+    <message key="CONTENT_READ_MORE">Learn more...</message>
+    <message key="MODULE_SEARCH_RESULT_TITLE">Results</message>
+    
+    
+	<!-- +
+		 | TEMPLATES
+		 + -->
+	<message key="INDEX_TITLE">Ametys v3</message>
+	<message key="SKIN_BREAD_CRUMB">Breadcrumb</message>
+	<message key="SKIN_BREAD_CRUMB_HOME">Home</message>
+	<message key="SKIN_FOCUS_TEXT">Focus</message>
+	<message key="SKIN_HOMEPAGE_TITLE">messages_fr.xml</message>
+	<message key="SKIN_GO_TO_CONTENT">Go to content</message>
+	<message key="SKIN_GO_TO_MENU">Go to menu</message>
+	<message key="SKIN_GO_TO_SEARCH">Go to search</message>
+	<message key="FLASH_TEXT">Demo CMS Ametys</message>
+	<message key="SKIN_DIRECT_ACCESS">Direct access</message>
+	<message key="SKIN_DIRECT_ACCESS_TEXT">Discover shortcuts to the special pages of this web site</message>
+	<message key="SKIN_SECTION_NAVIGATION">In this section</message>
+	<message key="SKIN_MAIN_NAVIGATION">Main navigation</message>
+	<message key="SKIN_FOOTER_COPYRIGHT">&#169; 2009 Anyware Services</message>
+		
+	<!--+
+		BACK OFFICE
+		+-->
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_TITLE1_LABEL">Title 1</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_TITLE1_DESCRIPTION">Title of first hierarchical level</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_TITLE2_LABEL">Title 2</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_TITLE2_DESCRIPTION">Title of second hierarchical level</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_TITLE3_LABEL">Title 3</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_TITLE3_DESCRIPTION">Title of third hierarchical level</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_LABEL">Sub-Title</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_SUBTITLE_DESCRIPTION">Paragraph style to accompany a title or replace an unimportant title</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_LABEL">Introduction</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_INTRODUCTION_DESCRIPTION">Paragraph style to use on the introduction of paper or a large section (Title 1)</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_NORMAL_LABEL">Normal</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_NORMAL_DESCRIPTION">Default style</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_LABEL">Without spaces</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_NARROWSPACED_DESCRIPTION">Style for writing continuous text. Allows you to write text compact but losing legibility</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_IMPORTANT_LABEL">Important</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_IMPORTANT_DESCRIPTION">Document text focus the reader's attention</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_LABEL">Secondary</message>
+	<message key="SKIN_BO_EDITOR_STYLES_PARA_SECONDARY_DESCRIPTION">Document text (often used on footer) to be used for endorsements or references</message>
+
+	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATALIGHT">Light</message>
+	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATALIGHT_DESC">Data table with colors and borders are lights.&lt;br/&gt;&lt;br/&gt;Use this style when the data presented do not have great importance for the understanding of content.</message>
+	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATA">Normal</message>
+	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATA_DESC">Classic able data.&lt;br&gt;&lt;br/&gt;Use this table style in most cases.</message>
+	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATASTRONG">Dark</message>
+	<message key="SKIN_BO_EDITOR_STYLES_TABLE_DATASTRONG_DESC">Data table with dark color.&lt;br/&gt;&lt;br/&gt;This table style attracts the attention of the visitor and must be used when the table is of particular importance in the content.</message>
+
+	<message key="SKIN_BO_EDITOR_STYLES_LINK_DOWNLOAD">Download</message>
+	<message key="SKIN_BO_EDITOR_STYLES_LINK_DOWNLOAD_DESC">Download link</message>
+	<message key="SKIN_BO_EDITOR_STYLES_LINK_KNOWMORE">Learn more</message>
+	<message key="SKIN_BO_EDITOR_STYLES_LINK_KNOWMORE_DESC">Internal link</message>
+	<message key="SKIN_BO_EDITOR_STYLES_LINK_EXTERNAL">External</message>
+	<message key="SKIN_BO_EDITOR_STYLES_LINK_EXTERNAL_DESC">External link</message>
+
+	<message key="SKIN_BO_EDITOR_STYLES_IMAGE_FRAME">Frame</message>
+	<message key="SKIN_BO_EDITOR_STYLES_IMAGE_FRAME_DESC">Image bordered by frame</message>
+	<message key="SKIN_BO_EDITOR_STYLES_IMAGE_LARGEFRAME">Large frame</message>
+	<message key="SKIN_BO_EDITOR_STYLES_IMAGE_LARGEFRAME_DESC">Image bordered by large frame</message>
+
+	<message key="SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_ARROW">Arrow</message>
+	<message key="SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_ARROW_DESC">Arrow bullets</message>
+	<message key="SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_CHECK">Check</message>
+	<message key="SKIN_BO_EDITOR_STYLES_UNORDEREDLIST_CHECK_DESC">Check bullets</message>
+	
+	
+	<message key="SKIN_BO_ZONING_INDEX_LABEL">TO_TRANSLATE:Accueil</message>
+	<message key="SKIN_BO_ZONING_INDEX_DESCRIPTION">TO_TRANSLATE:Utilisez ce gabarit pour la page d'accueil du site</message>
+	<message key="SKIN_BO_ZONING_INDEX_TOP_LEFT_LABEL">TO_TRANSLATE:Zone principale colonne de gauche</message>
+	<message key="SKIN_BO_ZONING_INDEX_TOP_LEFT_DESCRIPTION">TO_TRANSLATE:Cette zone doit être constituée d'un contenu simple créé avec un template article.</message>
+	<message key="SKIN_BO_ZONING_INDEX_TOP_RIGHT_LABEL">TO_TRANSLATE:Zone principale colonne de droite</message>
+	<message key="SKIN_BO_ZONING_INDEX_TOP_RIGHT_DESCRIPTION">TO_TRANSLATE:Cette zone doit être constituée d'un contenu simple créé avec un template article.</message>
+	<message key="SKIN_BO_ZONING_INDEX_MAIN_LABEL">TO_TRANSLATE:Zone principale centrale</message>
+	<message key="SKIN_BO_ZONING_INDEX_MAIN_DESCRIPTION">TO_TRANSLATE:Cette zone doit contenir l'information principale de la page. Elle contient usuellement des contenus éditoriaux généralement créés avec un template article.</message>
+	
+	<message key="SKIN_BO_ZONING_PAGE_LABEL">TO_TRANSLATE:Page</message>
+	<message key="SKIN_BO_ZONING_PAGE_DESCRIPTION">TO_TRANSLATE:Gabarit à utiliser pour la plupart des pages</message>
+	<message key="SKIN_BO_ZONING_PAGE_MAIN_LABEL">TO_TRANSLATE:Zone principale</message>
+	<message key="SKIN_BO_ZONING_PAGE_MAIN_DESCRIPTION">TO_TRANSLATE:Cette zone doit contenir l'information principale de la page. Elle contient usuellement des contenus éditoriaux généralement créés avec un template article.</message>
+    <message key="SKIN_BO_ZONING_PAGE_FOCUS_LABEL">TO_TRANSLATE:Zone de focus</message>
+    <message key="SKIN_BO_ZONING_PAGE_FOCUS_DESCRIPTION">TO_TRANSLATE:Ici sont saisis des articles, en utilisant les étiquettes de focus il est possible de changer le titre par défaut de fond bleu</message>
+	
+    <!-- Etiquettes pour la page d'accueil-->
+    <message key="SKIN_BO_TAGS_CAT_HOME_LABEL">TO_TRANSLATE:Accueil</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_DESCRIPTION">TO_TRANSLATE:Les différentes étiquettes pour gérer l'accueil</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_TOPLINKSCONTACT_LABEL">TO_TRANSLATE:Lien Contact en haut à droite</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_TOPLINKSCONTACT_DESCRIPTION">TO_TRANSLATE:Pour gérer le lien d'accès direct en haut à droite sur la page de contact</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_TOPLINKSMAP_LABEL">TO_TRANSLATE:Lien Plans d'accès en haut à droite</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_TOPLINKSMAP_DESCRIPTION">TO_TRANSLATE:Pour gérer le lien d'accès direct en haut à droite sur la page des plans d'accès</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_UNIVERSITY_LABEL">TO_TRANSLATE:Bloc Université</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_UNIVERSITY_DESCRIPTION">TO_TRANSLATE:Pour gérer les liens du bloc bleu "Université" à gauche</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_EDUCATION_LABEL">TO_TRANSLATE:Bloc Formations</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_EDUCATION_DESCRIPTION">TO_TRANSLATE:Pour gérer les liens du bloc bleu "Formations" à gauche</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_RESEARCH_LABEL">TO_TRANSLATE:Bloc Recherche</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_RESEARCH_DESCRIPTION">TO_TRANSLATE:Pour gérer les liens du bloc bleu "Recherche" à gauche</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_PROFIL_LABEL">TO_TRANSLATE:Accès par profils "Vous êtes"</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_PROFIL_DESCRIPTION">TO_TRANSLATE:Pour gérer les liens du bloc vert "Vous êtes" à droite</message>        
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_DIRECTACCESS_LABEL">TO_TRANSLATE:Accès directs</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_DIRECTACCESS_DESCRIPTION">TO_TRANSLATE:Pour gérer les liens du bloc violet "Accès direct" à droite</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_COMPOSANTE_LABEL">TO_TRANSLATE:Accès par Composantes</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_COMPOSANTE_DESCRIPTION">TO_TRANSLATE:Pour gérer les liens du bloc marron "Composantes" à droite</message>        
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_STUDENTLIFE_LABEL">TO_TRANSLATE:Lien student life (uniquement en version anglaise)</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_STUDENTLIFE_DESCRIPTION">TO_TRANSLATE:Pour gérer le lien "Student life"</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_INTERNATIONAL_LABEL">TO_TRANSLATE:Lien International (uniquement en version anglaise)</message>
+    <message key="SKIN_BO_TAGS_CAT_HOME_TAG_INTERNATIONAL_DESCRIPTION">TO_TRANSLATE:Pour gérer le lien "International"</message>
+    
+    <!-- Etiquettes pour les pages spéciales -->
+    <message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_LABEL">TO_TRANSLATE:Pages spéciales</message>
+    <message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_DESCRIPTION">TO_TRANSLATE:</message>
+    <message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_TAG_SITEMAP_LABEL">TO_TRANSLATE:Plan du site</message>
+    <message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_TAG_SITEMAP_DESCRIPTION">TO_TRANSLATE:Pour étiqueter la page "Plan du site"</message>	
+    <message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_TAG_RESEARCH_LABEL">TO_TRANSLATE:Recherche</message>
+    <message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_TAG_RESEARCH_DESCRIPTION">TO_TRANSLATE:Pour étiqueter la page du moteur de recherche</message>
+    <message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_TAG_HIDDEN_LABEL">TO_TRANSLATE:Pages cachées</message>
+	<message key="SKIN_BO_TAGS_CAT_SPECIALPAGES_TAG_HIDDEN_DESCRIPTION">TO_TRANSLATE:Pages n'apparaissant pas dans la navigation</message>
+    
+    <!--  Etiquettes pour les styles de page -->
+    <message key="SKIN_BO_TAGS_CAT_STYLES_LABEL">TO_TRANSLATE:Styles</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_DESCRIPTION">TO_TRANSLATE:Le style attribue une couleur à la page</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_UNIVERSITE_LABEL">TO_TRANSLATE:Université</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_UNIVERSITE_DESCRIPTION">TO_TRANSLATE:</message>    
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_RECHERCHE_LABEL">TO_TRANSLATE:Recherche</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_RECHERCHE_DESCRIPTION">TO_TRANSLATE:</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_FORMATION2010_LABEL">TO_TRANSLATE:Formations</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_FORMATION2010_DESCRIPTION">TO_TRANSLATE:</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_VIE_LABEL">TO_TRANSLATE:Vie étudiante</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_VIE_DESCRIPTION">TO_TRANSLATE:</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_INTERNATIONAL_LABEL">TO_TRANSLATE:International</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_INTERNATIONAL_DESCRIPTION">TO_TRANSLATE:</message>            
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_BIBLIO_LABEL">TO_TRANSLATE:Bibliothèque</message>
+    <message key="SKIN_BO_TAGS_CAT_STYLES_TAG_BIBLIO_DESCRIPTION">TO_TRANSLATE:</message>
+    
+    <!-- Etiquettes pour les focus -->
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_LABEL">TO_TRANSLATE:Focus</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_DESCRIPTION">TO_TRANSLATE:Le style des focus dans la zone de droite</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_VIOLET_LABEL">TO_TRANSLATE:Violet</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_VIOLET_DESCRIPTION">TO_TRANSLATE:</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_VERT_LABEL">TO_TRANSLATE:Vert</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_VERT_DESCRIPTION">TO_TRANSLATE:</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_MARRON_LABEL">TO_TRANSLATE:Marron</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_MARRON_DESCRIPTION">TO_TRANSLATE:</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_WITHOUTTITLE_LABEL">TO_TRANSLATE:Sans titre</message>
+    <message key="SKIN_BO_TAGS_CAT_FOCUS_TAG_WITHOUTTITLE_DESCRIPTION">TO_TRANSLATE:</message>
+
+	<message key="SKIN_BO_TAGS_TAG_MAINSECTION_LABEL">TO_TRANSLATE:Rubrique principale</message>
+	<message key="SKIN_BO_TAGS_TAG_MAINSECTION_DESCRIPTION">TO_TRANSLATE:Rubrique de premier niveau</message>
+</catalogue>
