@@ -15,4 +15,3 @@ En cours de développement (cf branche 'intranet')
 Skin pour le site de Polytech, dérivée de composantes
 
 En cours de développement (cf branche 'polytech')
-
