@@ -36,9 +36,65 @@
 	<!--  **				rightcol				**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="rightcol">
+		<div class="grid_4" id="menu">
+    <xsl:if test="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page"> <!-- on n'affiche le menu que s'il y a des sous pages -->
+      <ul class="nav">
+      	<xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page">
+      		<li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></li>
+       </xsl:for-each>
+      </ul>
+    </xsl:if>
+		</div>
 		<div class="grid_4" id="focus">
 			<zone name="focus" level="2"/>
 		</div>
 	</xsl:template>
+	
+
+<!-- navigation incluant les noeuds freres -->
+  <xsl:template name="navigation-menu">
+    <table width="204" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td background="{$stylecontext}/img/page_navigation_bkg.gif">
+          <xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']">
+            <xsl:for-each select="./preceding-sibling::*">
+              <table width="190" height="22" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="25" valign="top"><img src="{$stylecontext}/img/page_navigation_bullet.gif" width="22" height="22" /></td>
+                  <td valign="top" class="page_navigation"><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></td>
+                </tr>
+              </table>
+            </xsl:for-each>
+            <table width="190" height="22" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="25" valign="top" align="right"><img src="{$stylecontext}/img/page_navigation_bullet.gif" width="22" height="22" /></td>
+                <td valign="top" class="page_navigation"><xsl:value-of select="@sitemap:title"/></td>
+              </tr>
+            </table>
+            <xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page">
+              <table width="190" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="25" valign="top" align="right">&#160;</td>
+                  <td valign="top" class="page_navigation">&#160;-&#160;<a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></td>
+                </tr>
+              </table>
+            </xsl:for-each>
+            <xsl:for-each select="./following-sibling::*">
+              <table width="190" height="22" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td width="25" valign="top"><img src="{$stylecontext}/img/page_navigation_bullet.gif" width="22" height="22" /></td>
+                  <td valign="top" class="page_navigation"><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></td>
+                </tr>
+              </table>
+            </xsl:for-each>
+          </xsl:for-each>
+        </td>
+      </tr>
+      <tr>
+        <td height="5"><img src="{$stylecontext}/img/page_navigation_bottom.gif" width="204" height="5" /></td>
+      </tr>
+    </table>
+  </xsl:template>
+	
 
 </xsl:stylesheet>
