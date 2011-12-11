@@ -23,6 +23,61 @@
 		</xsl:if>
 	</xsl:template>
 
+	<!--  ********************************************	-->
+	<!--  **				header					**	-->
+	<!--  ********************************************	-->
+	<xsl:template name="header">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td rowspan="3" height="108" width="210">
+					<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_polytech.png" width="200" height="64" alt="logo" border="0"/></a>
+				</td>
+				<td valign="top" align="right">
+					<xsl:call-template name="top-toolbar"/>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" align="right">
+					<xsl:call-template name="navigation-top"/>
+				</td>
+			</tr>
+			<tr>
+				<td valign="top" align="right">
+					<table height="37" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td width="30"><a href="{$cms-context}/fr/index.html"><img src="{$skincontext}/img/top_fr.gif" width="24" border="0" height="37"/></a></td><!-- version francaise -->
+							<td width="30"><a href="{$cms-context}/en/index.html"><img src="{$skincontext}/img/top_en.gif" width="24" border="0" height="37"/></a></td><!-- version anglaise -->
+							<td width="30"><img src="{$skincontext}/img/pixel.gif" width="24" height="37"/></td><!-- autre version ... -->
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</xsl:template>
+ 		
+	<!-- ****************************************************************** -->
+	<xsl:template name="navigation-top">
+		<table height="32" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td width="5">
+					<img src="{$skincontext}/img/top_navigation_borderleft.png" width="10" height="32" />
+				</td>
+				<td background="{$skincontext}/img/top_navigation_bkg.png" class="top_navigation">
+					<xsl:for-each select="/cms/inputData/sitemap/page[@PLUGIN_TAGS_RUBRIQUE]">
+						<a href="{$cms-context}/{$lang}/{@sitemap:path}.html">
+							<xsl:attribute name="class">top_navigation<xsl:if test="@sitemap:current = 'true'">_on</xsl:if></xsl:attribute>
+							<xsl:value-of select="@sitemap:title"/>
+						</a>
+						<xsl:if test="not(position() = last())">&#160;&#160;|&#160;&#160;</xsl:if>
+					</xsl:for-each>
+				</td>
+				<td width="6">
+					<img src="{$skincontext}/img/top_navigation_borderright.png" width="10" height="32" />
+				</td>
+			</tr>
+		</table>
+	</xsl:template>
+
 	<xsl:template name="top-toolbar">
           <table height="37" border="0" cellpadding="0" cellspacing="0">
             <tr>

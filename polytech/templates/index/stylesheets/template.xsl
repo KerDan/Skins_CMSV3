@@ -15,12 +15,24 @@
 				<link href="{$skincontext}/css/accueil.css" rel="stylesheet" type="text/css"/>
 	</xsl:template>
 
-<!-- Sur la page d'accueil, la toolbar est affichée dans la colonne de droite, pas dans l'en-tête -->
-	<xsl:template name="top-toolbar">
-		<table height="37" border="0" cellpadding="0" cellspacing="0">
-			<tr><td> </td></tr>
+	<!--  ********************************************	-->
+	<!--  **				header					**	-->
+	<!--  ********************************************	-->
+	<xsl:template name="header">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td width="210" height="108">
+					<a href="{$cms-context}/{$lang}/index.html"><img src="{$skincontext}/img/logoweb_polytech.png" width="200" height="64" alt="logo" border="0"/></a>
+				</td>
+				<td valign="top" align="right"></td>
+				<td width="210" height="108" align="right">
+					<a href="http://www.u-psud.fr/"><img border="0" src="{$skincontext}/img/logoweb_psud.png" alt="logo Université Paris-Sud" /></a>
+				</td>
+			</tr>
 		</table>
 	</xsl:template>
+ 		
+	<!-- ****************************************************************** -->
 
 	<xsl:template name="middle">
 		<table bgcolor="#ffffff" border="0" cellspacing="0" cellpadding="0" width="100%">
