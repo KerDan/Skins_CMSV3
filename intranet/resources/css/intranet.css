@@ -35,10 +35,7 @@ ul.nav {
     display: block;
     margin: 0; padding: 0;
 }
-ul.nav li {
-    float: left;
-    display: block;
-}
+
 ul.nav li a {
 	text-decoration: none;
 }
@@ -56,10 +53,32 @@ ul.nav li a {
 #navbar ul.nav {
     padding: 10px 0;
 }
+#navbar ul.nav li {
+    float: left;
+}
 #navbar ul.nav li a {
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
+    padding:0 10px;
+}
+
+/* =============================================================================
+   menu de droite
+   ========================================================================== */
+#menu {
+	margin: 10px;
+	background-color: #eee;
+    font-size: 11px;
+    line-height:1.5em;
+}
+#menu ul.nav li {
+	border-bottom-color: #fff;
+	border-bottom-style:solid;
+}
+#menu ul.nav li a {
+	color: #000;
+    text-transform: uppercase;
     padding:0 10px;
 }
 

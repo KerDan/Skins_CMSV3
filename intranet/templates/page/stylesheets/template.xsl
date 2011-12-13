@@ -36,9 +36,19 @@
 	<!--  **				rightcol				**	-->
 	<!--  ********************************************	-->
 	<xsl:template name="rightcol">
+		<div class="grid_4" id="menu">
+    <xsl:if test="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page"> <!-- on n'affiche le menu que s'il y a des sous pages -->
+      <ul class="nav">
+      	<xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page">
+      		<li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></li>
+       </xsl:for-each>
+      </ul>
+    </xsl:if>
+		</div>
 		<div class="grid_4" id="focus">
 			<zone name="focus" level="2"/>
 		</div>
 	</xsl:template>
+	
 
 </xsl:stylesheet>
