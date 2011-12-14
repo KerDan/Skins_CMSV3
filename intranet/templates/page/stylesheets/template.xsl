@@ -37,13 +37,27 @@
 	<!--  ********************************************	-->
 	<xsl:template name="rightcol">
 		<div class="grid_4" id="menu">
-    <xsl:if test="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page"> <!-- on n'affiche le menu que s'il y a des sous pages -->
+	<xsl:variable name="rubrique" select="/cms/inputData/sitemap/page[@sitemap:in-path='true']" />
+      <h2><xsl:value-of select="$rubrique/@sitemap:title"/></h2>
       <ul class="nav">
-      	<xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page">
-      		<li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></li>
-       </xsl:for-each>
+      <xsl:for-each select="$rubrique/page"> <!-- pages du premier niveau de la rubrique courante -->
+        <li><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></li>
+        <xsl:if test="@sitemap:in-path='true'">
+          <ul class="nav">
+          <xsl:for-each select="./page"> <!-- sous pages -->
+            <li>
+              <a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links">
+              <xsl:if test="@sitemap:in-path='true'">
+                <xsl:attribute name="class">page_navigation_links flag</xsl:attribute>
+              </xsl:if>
+                <xsl:value-of select="@sitemap:title"/>
+              </a>
+            </li>
+          </xsl:for-each>
+          </ul>
+        </xsl:if>
+      </xsl:for-each>
       </ul>
-    </xsl:if>
 		</div>
 		<div class="grid_4" id="focus">
 			<zone name="focus" level="2"/>

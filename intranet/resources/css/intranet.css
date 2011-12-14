@@ -58,7 +58,6 @@ ul.nav li a {
 }
 #navbar ul.nav li a {
     font-weight: bold;
-    text-transform: uppercase;
     color: #fff;
     padding:0 10px;
 }
@@ -72,13 +71,27 @@ ul.nav li a {
     font-size: 11px;
     line-height:1.5em;
 }
+#menu h2 {
+	font-variant:small-caps;
+	margin: 10px;
+	padding: 10px;
+	background-color: #F27B31;
+}
+#menu>ul {
+	border-top: thin solid #fff;
+}
 #menu ul.nav li {
-	border-bottom-color: #fff;
-	border-bottom-style:solid;
+	border-bottom: thin solid #fff;
+}
+#menu ul ul {
+	padding-left:10px;
+	background-color: #fff;
+}
+#menu ul.nav ul li {
+	border-bottom: thin dotted #000;
 }
 #menu ul.nav li a {
 	color: #000;
-    text-transform: uppercase;
     padding:0 10px;
 }
 
@@ -88,7 +101,9 @@ ul.nav li a {
 #breadcrumb {
 	font-size: 11px;
 }
-
+#breadcrumb ul.nav li {
+    float: left;
+}
 /* =============================================================================
    Pied de page
    ========================================================================== */
