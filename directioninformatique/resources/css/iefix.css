@@ -1,0 +1,7 @@
+/* Corrections des bugs d'IE 6*/
+
+/* pour corriger le bug d'affichage avec IE6 (haslayout) */
+/* Sans cette correction, le texte des actus disparait lorsqu'on survole des liens dans la page!!! */
+.content #actus {
+	height: 1%;
+}
