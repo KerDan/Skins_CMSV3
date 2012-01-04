@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- template des pages du skin UPSud v3 -->
 <!-- Daniel Kerboeuf, novembre 2011 -->
+<!-- Sandrine Rivoire, decembre 2011 -->
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
@@ -77,9 +78,8 @@
      </div>
         </td>
         <td colspan="2">
-              <table border="0" cellspacing="0" cellpadding="0" height="28" width="100%" background="{$templatecontext}/default/img/page_title_bkg.gif" class="page_title_bkg">
+              <table border="0" cellspacing="0" cellpadding="0" height="28" width="100%" class="page_title_bkg">
                 <tr>
-                  <td width="33"><img src="{$templatecontext}/default/img/page_title_bullet.gif" width="33" height="32"/></td>
                   <td valign="top">
                     <xsl:variable name="title">
                       <xsl:choose>

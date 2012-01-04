@@ -24,7 +24,7 @@
     <message key="sitemap">plan du site</message>
     <message key="access">accès</message>
     <message key="info_legales">informations légales</message>
-    <message key="copyright">Copyright &#169; Universit&#233; Paris-Sud 11 2006 - Tous droits r&#233;serv&#233;s - </message>
+    <message key="copyright">Copyright &#169; Universit&#233; Paris-Sud 2006 - Tous droits r&#233;serv&#233;s - </message>
     <message key="print">Imprimer la page</message>
     
     <message key="SKIN_ERROR_404_TITLE">Page non trouvée</message>

@@ -22,10 +22,11 @@ a {
   color: #005d9d;
   text-decoration: none;
 }
-a:active {
+a:hover {
   text-decoration: none;
-  color: red;
+  color: black;
 }
+
 img {border: 0px;}
 
 a.print
@@ -49,6 +50,7 @@ FONT-SIZE: 10px;
 COLOR: #333;
 FONT-FAMILY: Arial, sans-serif;
 }
+
 a.path 
 {
 COLOR: #339;
@@ -56,7 +58,7 @@ TEXT-DECORATION: none
 }
 a.path:hover 
 {
-COLOR: #1BBCF0; 
+COLOR: black; 
 TEXT-DECORATION: none;
 }
 
