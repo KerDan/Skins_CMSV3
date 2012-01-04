@@ -73,9 +73,6 @@
               <xsl:call-template name="subnavigation"/> 
             </xsl:when>
           </xsl:choose>
-     <div id="annexe_cg">
-      <zone name="zone-left-page" level="2"/>
-     </div>
         </td>
         <td colspan="2">
               <table border="0" cellspacing="0" cellpadding="0" height="28" width="100%" class="page_title_bkg">
