@@ -122,12 +122,15 @@
 	<message key="SKIN_BO_ZONING_INDEX_MAIN_LABEL">Zone principale centrale</message>
 	<message key="SKIN_BO_ZONING_INDEX_MAIN_DESCRIPTION">Cette zone doit contenir l'information principale de la page. Elle contient usuellement des contenus éditoriaux généralement créés avec un template article.</message>
 	
-	<message key="SKIN_BO_ZONING_PAGE_LABEL">Page</message>
+	<message key="SKIN_BO_ZONING_PAGE_LABEL">Page standard</message>
 	<message key="SKIN_BO_ZONING_PAGE_DESCRIPTION">Gabarit à utiliser pour la plupart des pages</message>
 	<message key="SKIN_BO_ZONING_PAGE_MAIN_LABEL">Zone principale</message>
 	<message key="SKIN_BO_ZONING_PAGE_MAIN_DESCRIPTION">Cette zone doit contenir l'information principale de la page. Elle contient usuellement des contenus éditoriaux généralement créés avec un template article.</message>
-    <message key="SKIN_BO_ZONING_PAGE_FOCUS_LABEL">Zone de focus</message>
-    <message key="SKIN_BO_ZONING_PAGE_FOCUS_DESCRIPTION">Ici sont saisis des articles, en utilisant les étiquettes de focus il est possible de changer le titre par défaut de fond bleu</message>
+
+	<message key="SKIN_BO_ZONING_MENU_LABEL">Page avec menu</message>
+	<message key="SKIN_BO_ZONING_MENU_DESCRIPTION">Gabarit à utiliser pour afficher les sous-pages de la rubrique</message>
+	<message key="SKIN_BO_ZONING_MENU_MAIN_LABEL">Zone principale</message>
+	<message key="SKIN_BO_ZONING_MENU_MAIN_DESCRIPTION">Cette zone doit contenir l'information principale de la page. Elle contient usuellement des contenus éditoriaux généralement créés avec un template article.</message>
 
 	
     <!-- Etiquettes pour la page d'accueil-->
