@@ -15,12 +15,7 @@
    limitations under the License.
    -->
  <templates>
- <list mode="exclude"/>
- 	<conditions>
-		<condition template="index">
-			<page regexp_path="index"/>
-		</condition>
- 	</conditions>
+ 	<list mode="exclude"/>
  </templates>
    
  
