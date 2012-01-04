@@ -64,15 +64,7 @@
     <table width="100%">
       <tr>
         <td valign="top" rowspan="2">
-        <xsl:variable name="rubrique" select="/cms/inputData/sitemap/page[@sitemap:in-path='true']" />
-          <xsl:choose>
-            <xsl:when test="name(/cms/inputData/sitemap//page[@sitemap:current = 'true']/parent::*) = 'page'">
               <xsl:call-template name="navigation-menu"/> 
-            </xsl:when>
-            <xsl:when test="name(/cms/inputData/sitemap//page[@sitemap:current = 'true']/parent::*) = 'sitemap'">
-              <xsl:call-template name="subnavigation"/> 
-            </xsl:when>
-          </xsl:choose>
         </td>
         <td colspan="2">
               <table border="0" cellspacing="0" cellpadding="0" height="28" width="100%" class="page_title_bkg">
@@ -131,7 +123,7 @@
     </table>
   </xsl:template>
 
-  <xsl:template name="subnavigation">
+  <xsl:template name="navigation-menu">
     <xsl:if test="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page"> <!-- on n'affiche le menu que s'il y a des sous pages -->
     <table width="204" border="0" cellspacing="0" cellpadding="0">
       <tr>
@@ -151,10 +143,6 @@
       </tr>
     </table>
     </xsl:if>
-  </xsl:template>
-
-<!-- navigation incluant les noeuds freres -->
-  <xsl:template name="navigation-menu">
   </xsl:template>
 
 </xsl:stylesheet>
