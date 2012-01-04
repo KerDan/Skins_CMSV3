@@ -63,18 +63,7 @@
   <xsl:template name="content">
     <table width="100%">
       <tr>
-        <td valign="top" rowspan="2">
-        <xsl:variable name="rubrique" select="/cms/inputData/sitemap/page[@sitemap:in-path='true']" />
-          <xsl:choose>
-            <xsl:when test="name(/cms/inputData/sitemap//page[@sitemap:current = 'true']/parent::*) = 'page'">
-              <xsl:call-template name="navigation-menu"/> 
-            </xsl:when>
-            <xsl:when test="name(/cms/inputData/sitemap//page[@sitemap:current = 'true']/parent::*) = 'sitemap'">
-              <xsl:call-template name="subnavigation"/> 
-            </xsl:when>
-          </xsl:choose>
-        </td>
-        <td colspan="2">
+        <td>
               <table border="0" cellspacing="0" cellpadding="0" height="28" width="100%" class="page_title_bkg">
                 <tr>
                   <td valign="top">
@@ -131,30 +120,5 @@
     </table>
   </xsl:template>
 
-  <xsl:template name="subnavigation">
-    <xsl:if test="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page"> <!-- on n'affiche le menu que s'il y a des sous pages -->
-    <table width="204" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td background="{$stylecontext}/img/page_navigation_bkg.gif">
-          <xsl:for-each select="/cms/inputData/sitemap//page[@sitemap:current = 'true']/page">
-            <table width="190" height="22" border="0" cellpadding="0" cellspacing="0">
-              <tr>
-                <td width="25" valign="top"><img src="{$stylecontext}/img/page_navigation_bullet.gif" width="22" height="22" /></td>
-                <td valign="top" class="page_navigation"><a href="{$cms-context}/{$lang}/{@sitemap:path}.html" class="page_navigation_links"><xsl:value-of select="@sitemap:title"/></a></td>
-              </tr>
-            </table>
-          </xsl:for-each>
-        </td>
-      </tr>
-      <tr>
-        <td height="5"><img src="{$stylecontext}/img/page_navigation_bottom.gif" width="204" height="5" /></td>
-      </tr>
-    </table>
-    </xsl:if>
-  </xsl:template>
-
-<!-- navigation incluant les noeuds freres -->
-  <xsl:template name="navigation-menu">
-  </xsl:template>
 
 </xsl:stylesheet>
