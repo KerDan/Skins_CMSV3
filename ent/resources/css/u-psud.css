@@ -99,7 +99,7 @@ TEXT-DECORATION: none;
 padding: 0;
 
 margin: 20px 20px 10px 10px;
-width: 180px;
+width: 250px;
 }
 
 #menu h2   {
@@ -118,7 +118,7 @@ width: 180px;
 }
 #menu ul li  {
   color: #000;
-  line-height: 1.5em;
+  line-height: 1.1em;
   border-bottom: 2px solid white;
 }
 
